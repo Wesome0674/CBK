@@ -13,7 +13,10 @@ module.exports = {
       linear:
         "linear-gradient(90deg, rgba(113,88,226,1) 5%, rgba(205,132,241,1) 50%)",
     },
-
+    borderRadius: {
+      DEFAULT: '10px',
+      'full': '9999px'
+    },
     fontSize: {
       "4xl": [
         "64px",
@@ -59,7 +62,7 @@ module.exports = {
         },
       ],
       pre: [
-        "1.5rem",
+        "10px",
         {
           letterSpacing: "3%",
           fontWeight: "600",
@@ -81,7 +84,7 @@ module.exports = {
     },
     extend: {
       colors: {
-        white2: "#F1F5F9",
+        white: "#fff",
         success: "#46D5B3",
         red: "#FF4848",
         cloud: "#fafce",

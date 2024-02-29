@@ -1,16 +1,9 @@
 import clsx from "clsx";
-import { ReactNode } from "react";
 
 interface Props {
   size?: "small" | "medium" | "large";
-  variant?:
-    | "accent"
-    | "outline"
-    | "insta"
-    | "dribble"
-    | "git"
-    | "icon";
-  icon?: any;
+  variant?: "accent" | "outline" | "insta" | "dribble" | "git" | "icon";
+  icon?: { icon: React.ElementType };
   iconTheme?: "accent" | "secondary";
   iconPosition?: "left" | "right";
   children?: React.ReactNode;
@@ -33,31 +26,55 @@ export const Button = ({
       variantStyles = "bg-primary hover:bg-primary/85 text-white rounded";
       break;
     case "outline":
-      variantStyles = "bg-white2 border-2 border-primary hover:bg-grey/85 text-primary rounded";
+      variantStyles =
+        "bg-light border-2 border-primary hover:bg-white/70 text-primary rounded";
       break;
     case "insta":
       variantStyles = "bg-bleu hover:bg-bleu/85 text-white rounded";
       break;
     case "git":
-      variantStyles = "bg-white border-2 border-grey hover:bg-grey/85 text-black rounded";
+      variantStyles =
+        "bg-white border-2 border-black/90 hover:bg-grey/85 text-black rounded";
       break;
     case "dribble":
       variantStyles = "bg-pink hover:bg-pink/85 text-white rounded";
       break;
     case "icon":
-      variantStyles = "bg-linear hover:bg-primary/85 rounded-full";
+      if (iconTheme === "accent") {
+        variantStyles =
+          "bg-linear border border-secondary hover:opacity-85 rounded-full";
+      }
+      if (iconTheme === "secondary") {
+        variantStyles =
+          "bg-light border-primary border hover:bg-white/70 rounded-full";
+      }
       break;
   }
 
   switch (size) {
     case "small":
-      sizeStyles = "";
+      sizeStyles = `text-sm  ${
+        variant === "icon"
+          ? " flex items-center justify-center w-[40px] h-[40px]"
+          : "py-[5px] px-[10px]"
+      }`;
+      iconSize = 18;
       break;
     case "medium":
-      sizeStyles = "";
+      sizeStyles = `text-base  ${
+        variant === "icon"
+          ? " flex items-center justify-center w-[50px] h-[50px]"
+          : "py-[10px] px-[15px]"
+      }`;
+      iconSize = 20;
       break;
     case "large":
-      sizeStyles = "";
+      sizeStyles = `text-xl ${
+        variant === "icon"
+          ? " flex items-center justify-center w-[60px] h-[60px]"
+          : "py-[10px] px-[25px]"
+      }`;
+      iconSize = 24;
       break;
   }
 
@@ -67,7 +84,19 @@ export const Button = ({
         type="button"
         className={clsx(variantStyles, sizeStyles, iconSize)}
       >
-        {children}
+        {icon && variant === "icon" ? (
+          <icon.icon size={iconSize} />
+        ) : (
+          <>
+            <div className={clsx(icon &&"flex items-center gap-2")}>
+              {icon && iconPosition === "left" && <icon.icon size={iconSize} />}
+              {children}
+              {icon && iconPosition === "right" && (
+                <icon.icon size={iconSize} />
+              )}
+            </div>
+          </>
+        )}
       </button>
     </>
   );
