@@ -63,7 +63,6 @@ export const Header = ({}: Props) => {
           src={"/assets/images/meheader.jpeg"}
           alt="image"
           fill
-          objectFit="cover"
         />
       </div>
     </Container>
