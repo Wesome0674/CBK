@@ -1,11 +1,6 @@
 import { Button } from "@/ui/designsystem/Button";
 import { Typographie } from "@/ui/designsystem/typography/Typographie";
 import Image from "next/image";
-import { HiArrowSmallRight } from "react-icons/hi2"; // right arrow
-import { BsFileEarmarkCode } from "react-icons/bs"; // code header
-import { MdOutlineDesignServices } from "react-icons/md"; // design header
-import { TbWorldWww } from "react-icons/tb"; // www
-import { IoChevronDown } from "react-icons/io5"; // down chevron
 import { BiCodeBlock, BiSolidMessageRoundedDetail } from "react-icons/bi"; // code and message
 import { FaServer } from "react-icons/fa6"; // back-end
 import { SiArduino } from "react-icons/si"; // iot
@@ -15,28 +10,14 @@ import { FaReact } from "react-icons/fa"; // react
 import { SiTailwindcss } from "react-icons/si"; // tailwind
 import { Container } from "@/ui/components/container/Container";
 import { Navigation } from "@/ui/components/navigation/Navigation";
+import { Header } from "@/ui/components/header/Header";
 
 export default function Home() {
   return (
     <>
       <Navigation />
+      <Header />
       <Container>
-        <div className="flex gap-5 items-center">
-          <Button size="small" variant="accent">
-            button
-          </Button>
-          <Button variant="outline">button</Button>
-          <Button size="large" variant="insta">
-            button
-          </Button>
-          <Button
-            variant="icon"
-            iconTheme="secondary"
-            icon={{ icon: HiArrowSmallRight }}
-          />
-          <Button variant="icon" icon={{ icon: HiArrowSmallRight }} />
-          <Button icon={{ icon: HiArrowSmallRight }}>Button icon</Button>
-        </div>
         <Typographie theme="linear" variant="display" component="h1">
           Typography
         </Typographie>

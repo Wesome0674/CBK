@@ -14,13 +14,14 @@ module.exports = {
         "linear-gradient(90deg, rgba(113,88,226,1) 5%, rgba(205,132,241,1) 50%)",
     },
     borderRadius: {
-      DEFAULT: '10px',
+      DEFAULT: '6px',
       'full': '9999px'
     },
     fontSize: {
       "4xl": [
         "64px",
         {
+          lineHeight: '75px',
           fontWeight: "600",
         },
       ],
@@ -78,7 +79,7 @@ module.exports = {
       link: [
         "16px",
         {
-          fontWeight: "600",
+          fontWeight: "500",
         },
       ],
     },

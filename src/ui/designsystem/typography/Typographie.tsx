@@ -12,7 +12,7 @@ interface Props {
     | "pre-title"
     | "button-text"
     | "link";
-  component?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "span" | "p" | "div";
+  component?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "span" | "p" | "a" | "div";
   weight?: "regular" | "medium";
   className?: string;
   theme?:
