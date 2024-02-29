@@ -13,56 +13,61 @@ import { FaPhoneAlt } from "react-icons/fa"; // phone
 import { IoIosMail, IoMdPin } from "react-icons/io"; // mail and loc
 import { FaReact } from "react-icons/fa"; // react
 import { SiTailwindcss } from "react-icons/si"; // tailwind
+import { Container } from "@/ui/components/container/Container";
+import { Navigation } from "@/ui/components/navigation/Navigation";
 
 export default function Home() {
   return (
-    <main className="bg-slate-300 min-h-screen p-5">
-      <div className="flex gap-5 items-center">
-        <Button size="small" variant="accent">
-          button
-        </Button>
-        <Button variant="outline">button</Button>
-        <Button size="large" variant="insta">
-          button
-        </Button>
-        <Button
-          variant="icon"
-          iconTheme="secondary"
-          icon={{ icon: HiArrowSmallRight }}
-        />
-        <Button variant="icon" icon={{ icon: HiArrowSmallRight }} />
-        <Button icon={{ icon: HiArrowSmallRight }}>Button icon</Button>
-      </div>
-      <Typographie theme="linear" variant="display" component="h1">
-        Typography
-      </Typographie>
-      <Typographie theme="secondary" variant="h1" component="h1">
-        Typography
-      </Typographie>
-      <Typographie theme="tercery" variant="h2" component="h1">
-        Typography
-      </Typographie>
-      <Typographie theme="error" variant="h3" component="h1">
-        Typography
-      </Typographie>
-      <Typographie theme="success" variant="body-base" component="h1">
-        Typography
-      </Typographie>
-      <Typographie theme="light" variant="body-bold" component="h1">
-        Typography
-      </Typographie>
-      <Typographie theme="primary" variant="body-sm" component="h1">
-        Typography
-      </Typographie>
-      <Typographie variant="pre-title" component="h1">
-        Typography
-      </Typographie>
-      <Typographie variant="button-text" component="h1">
-        Typography
-      </Typographie>
-      <Typographie variant="link" component="h1">
-        Typography
-      </Typographie>
-    </main>
+    <>
+      <Navigation />
+      <Container>
+        <div className="flex gap-5 items-center">
+          <Button size="small" variant="accent">
+            button
+          </Button>
+          <Button variant="outline">button</Button>
+          <Button size="large" variant="insta">
+            button
+          </Button>
+          <Button
+            variant="icon"
+            iconTheme="secondary"
+            icon={{ icon: HiArrowSmallRight }}
+          />
+          <Button variant="icon" icon={{ icon: HiArrowSmallRight }} />
+          <Button icon={{ icon: HiArrowSmallRight }}>Button icon</Button>
+        </div>
+        <Typographie theme="linear" variant="display" component="h1">
+          Typography
+        </Typographie>
+        <Typographie theme="secondary" variant="h1" component="h1">
+          Typography
+        </Typographie>
+        <Typographie theme="tercery" variant="h2" component="h1">
+          Typography
+        </Typographie>
+        <Typographie theme="error" variant="h3" component="h1">
+          Typography
+        </Typographie>
+        <Typographie theme="success" variant="body-base" component="h1">
+          Typography
+        </Typographie>
+        <Typographie theme="light" variant="body-bold" component="h1">
+          Typography
+        </Typographie>
+        <Typographie theme="primary" variant="body-sm" component="h1">
+          Typography
+        </Typographie>
+        <Typographie variant="pre-title" component="h1">
+          Typography
+        </Typographie>
+        <Typographie variant="button-text" component="h1">
+          Typography
+        </Typographie>
+        <Typographie variant="link" component="h1">
+          Typography
+        </Typographie>
+      </Container>
+    </>
   );
 }
