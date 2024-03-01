@@ -16,7 +16,9 @@ module.exports = {
     },
     borderRadius: {
       DEFAULT: '6px',
-      'full': '9999px'
+      'full': '9999px',
+      'lg' : '15px',
+      'md': '12px'
     },
     fontSize: {
       "4xl": [
@@ -99,6 +101,7 @@ module.exports = {
       },
       dropShadow: {
         'lg': '8px 9px 4px rgba(0, 0, 0, 0.25)',
+        'md': '0px 36px 105px rgba(43, 56, 76, 0.10)'
       },
     },
   },

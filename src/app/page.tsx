@@ -11,43 +11,48 @@ import { SiTailwindcss } from "react-icons/si"; // tailwind
 import { Container } from "@/ui/components/container/Container";
 import { Navigation } from "@/ui/components/navigation/Navigation";
 import { Header } from "@/ui/components/header/Header";
+import { Cards } from "@/ui/components/cards/Cards";
+import { About } from "@/ui/components/about/About";
 
 export default function Home() {
   return (
     <>
       <Navigation />
       <Header />
+      <About />
       <Container>
-        <Typographie theme="linear" variant="display" component="h1">
-          Typography
-        </Typographie>
-        <Typographie theme="secondary" variant="h1" component="h1">
-          Typography
-        </Typographie>
-        <Typographie theme="tercery" variant="h2" component="h1">
-          Typography
-        </Typographie>
-        <Typographie theme="error" variant="h3" component="h1">
-          Typography
-        </Typographie>
-        <Typographie theme="success" variant="body-base" component="h1">
-          Typography
-        </Typographie>
-        <Typographie theme="light" variant="body-bold" component="h1">
-          Typography
-        </Typographie>
-        <Typographie theme="primary" variant="body-sm" component="h1">
-          Typography
-        </Typographie>
-        <Typographie variant="pre-title" component="h1">
-          Typography
-        </Typographie>
-        <Typographie variant="button-text" component="h1">
-          Typography
-        </Typographie>
-        <Typographie variant="link" component="h1">
-          Typography
-        </Typographie>
+        <Cards variant="small" >
+          <Typographie theme="linear" variant="display" component="h1">
+            Typography
+          </Typographie>
+          <Typographie theme="secondary" variant="h1" component="h1">
+            Typography
+          </Typographie>
+          <Typographie theme="tercery" variant="h2" component="h1">
+            Typography
+          </Typographie>
+          <Typographie theme="error" variant="h3" component="h1">
+            Typography
+          </Typographie>
+          <Typographie theme="success" variant="body-base" component="h1">
+            Typography
+          </Typographie>
+          <Typographie theme="light" variant="body-bold" component="h1">
+            Typography
+          </Typographie>
+          <Typographie theme="primary" variant="body-sm" component="h1">
+            Typography
+          </Typographie>
+          <Typographie variant="pre-title" component="h1">
+            Typography
+          </Typographie>
+          <Typographie variant="button-text" component="h1">
+            Typography
+          </Typographie>
+          <Typographie variant="link" component="h1">
+            Typography
+          </Typographie>
+        </Cards>
       </Container>
     </>
   );

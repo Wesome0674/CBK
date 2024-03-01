@@ -11,7 +11,7 @@ interface Props {}
 
 export const Header = ({}: Props) => {
   return (
-    <Container className="flex items-center justify-between my-14 gap-5 ">
+    <Container className="flex items-center justify-between my-14 gap-7 ">
       <div className="space-y-4">
         <div>
           <Typographie
@@ -62,7 +62,7 @@ export const Header = ({}: Props) => {
             src={"/assets/images/meheader.jpeg"}
             alt="image"
             fill
-            objectFit="cover"
+            style={{ objectFit: "cover" }}
           />
         </div>
         <div //👈 wrap your Image tag
@@ -72,7 +72,7 @@ export const Header = ({}: Props) => {
             src={"/assets/svg/arrowme.svg"}
             alt="image"
             fill
-            objectFit="contain"
+            style={{ objectFit: "contain" }}
           />
         </div>
       </div>
