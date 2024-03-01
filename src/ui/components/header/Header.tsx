@@ -19,7 +19,7 @@ export const Header = ({}: Props) => {
             component="h1"
             className="flex flex-col"
           >
-            <span>Hello, i'm</span>
+            <span>Hello, i&apos;m</span> 
             <span>Boularand Killian</span>
           </Typographie>
           <Typographie
@@ -28,7 +28,7 @@ export const Header = ({}: Props) => {
             className="max-w-[500px]"
             component="p"
           >
-            I'm a passionate student coder based in Annecy France. I strives to
+            I&apos;m a passionate student coder based in Annecy France. I strives to
             build immersive and beautiful web applications through carefully
             crafted code and user-centric design.
           </Typographie>
