@@ -11,7 +11,7 @@ interface Props {}
 
 export const Header = ({}: Props) => {
   return (
-    <Container className="flex items-center justify-between my-10 ">
+    <Container className="flex items-center justify-between my-14 gap-5 ">
       <div className="space-y-4">
         <div>
           <Typographie
@@ -19,7 +19,7 @@ export const Header = ({}: Props) => {
             component="h1"
             className="flex flex-col"
           >
-            <span>Hello, i&apos;m</span> 
+            <span>Hello, i&apos;m</span>
             <span>Boularand Killian</span>
           </Typographie>
           <Typographie
@@ -28,9 +28,9 @@ export const Header = ({}: Props) => {
             className="max-w-[500px]"
             component="p"
           >
-            I&apos;m a passionate student coder based in Annecy France. I strives to
-            build immersive and beautiful web applications through carefully
-            crafted code and user-centric design.
+            I&apos;m a passionate student coder based in Annecy France. I
+            strives to build immersive and beautiful web applications through
+            carefully crafted code and user-centric design.
           </Typographie>
         </div>
 
@@ -53,18 +53,28 @@ export const Header = ({}: Props) => {
           <Button variant="outline">Contact me</Button>
         </div>
       </div>
-      <div //👈 wrap your Image tag
-        className="flex h-[340px] w-[230px] border-4 border-light rounded origin-bottom -rotate-12"
-        style={{
-          position: "relative",
-        }}
-      >
-        <Image
-          src={"/assets/images/meheader.jpeg"}
-          alt="image"
-          fill
-          objectFit="cover"
-        />
+      <div></div>
+      <div className="relative">
+        <div //👈 wrap your Image tag
+          className="drop-shadow-lg bg-black  h-[340px] w-[230px] border-4 border-light rounded origin-bottom -rotate-12 "
+        >
+          <Image
+            src={"/assets/images/meheader.jpeg"}
+            alt="image"
+            fill
+            objectFit="cover"
+          />
+        </div>
+        <div //👈 wrap your Image tag
+          className=" h-[175px] w-[175px] absolute top-[-25px]  mx-[-230px]"
+        >
+          <Image
+            src={"/assets/svg/arrowme.svg"}
+            alt="image"
+            fill
+            objectFit="contain"
+          />
+        </div>
       </div>
     </Container>
   );

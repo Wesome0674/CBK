@@ -1,3 +1,4 @@
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -95,6 +96,9 @@ module.exports = {
         tercery: "#556070",
         bleu: "#4093EF",
         pink: "#D15584"
+      },
+      dropShadow: {
+        'lg': '8px 9px 4px rgba(0, 0, 0, 0.25)',
       },
     },
   },
