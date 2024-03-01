@@ -51,7 +51,7 @@ export const About = ({}: Props) => {
           >
             A 17-year-old high school senior with a passion for creating
             captivating website designs and bringing them to life through
-            coding. For nearly two years now, I've been immersing myself in the
+            coding. For nearly two years now, I&apos;ve been immersing myself in the
             world of web development, constantly honing my skills and pushing
             boundaries. What started as a curiosity has evolved into a
             full-blown passion, driving me to explore new design trends,
