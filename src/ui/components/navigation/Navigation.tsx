@@ -13,7 +13,7 @@ export const Navigation = ({}: Props) => {
         <div>
           <Typographie
             variant="link"
-            className="flex items-center gap-14 "
+            className="flex items-center gap-14 cursor-pointer"
             component="span"
           >
             <span>Home</span>
@@ -27,7 +27,7 @@ export const Navigation = ({}: Props) => {
       <Button size="medium" icon={{ icon: IoChevronDown }}>
         <select
           name="language"
-          className="bg-transparent appearance-none border-none focus:outline-none cursor-pointer"
+          className="w-full bg-transparent appearance-none border-none focus:outline-none cursor-pointer"
         >
           <option className="text-black">Us English</option>
           <option className="text-black">Fr French</option>

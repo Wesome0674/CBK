@@ -13,6 +13,7 @@ import { Navigation } from "@/ui/components/navigation/Navigation";
 import { Header } from "@/ui/components/header/Header";
 import { Cards } from "@/ui/components/cards/Cards";
 import { About } from "@/ui/components/about/About";
+import { Skills } from "@/ui/components/skills/Skills";
 
 export default function Home() {
   return (
@@ -20,8 +21,9 @@ export default function Home() {
       <Navigation />
       <Header />
       <About />
+      <Skills />
       <Container>
-        <Cards variant="small" >
+        <Cards variant="small">
           <Typographie theme="linear" variant="display" component="h1">
             Typography
           </Typographie>

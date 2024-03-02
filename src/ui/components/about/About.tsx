@@ -27,7 +27,7 @@ export const About = ({}: Props) => {
           >
             I am passionate front-end web developper
           </Typographie>
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-2">
             <Typographie component="p">
               Hi I&apos;m Kilian Boularand
             </Typographie>
