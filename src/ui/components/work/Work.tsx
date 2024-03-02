@@ -21,8 +21,8 @@ export const Work = ({}: Props) => {
           theme="tercery"
           className="max-w-[550px]"
         >
-          "Discover my diverse projects, reflecting passion and dedication in
-          development and design.
+          &quot;Discover my diverse projects, reflecting passion and dedication in
+          development and design.&quot;
         </Typographie>
       </div>
       {workData.map((item, index) => (
@@ -69,7 +69,7 @@ export const Work = ({}: Props) => {
               ) : (
                 <item.madeUsing.first size={30} className="text-primary" />
               )}
-              <Typographie>&</Typographie>
+              <Typographie>&amp;</Typographie>
               {typeof item.madeUsing.second === "string" ? (
                 <Typographie theme="primary">
                   {item.madeUsing.second}
