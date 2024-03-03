@@ -11,10 +11,10 @@ export const Cards = ({ className, children, variant = "medium" }: Props) => {
 
   switch (variant) {
     case "big":
-      varianStyles = "rounded-lg drop-shadow-md  px-[80px] py-[80px]";
+      varianStyles = " bg-white rounded-lg drop-shadow-md  px-[80px] py-[80px]";
       break;
     case "medium":
-      varianStyles = "rounded-md px-[32px] py-[32px]";
+      varianStyles = " bg-white rounded-md px-[32px] py-[32px]";
       break;
     case "small":
       varianStyles = "rounded-lg px-[20px] py-[20px] border border-tercery";
@@ -26,7 +26,7 @@ export const Cards = ({ className, children, variant = "medium" }: Props) => {
       className={clsx(
         className,
         varianStyles,
-        "grid place-content-center bg-white w-fit"
+        "grid place-content-center w-fit"
       )}
     >
       {children}
