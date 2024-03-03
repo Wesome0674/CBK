@@ -25,7 +25,7 @@ export const Contact = ({}: Props) => {
                 theme="tercery"
               >
                 Feel free to contact me via phone or through my social media
-                channels. I'm always available to connect!
+                channels. I&apos;m always available to connect!
               </Typographie>
             </div>
             <div className="space-y-6">
