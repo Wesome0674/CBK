@@ -5,6 +5,7 @@ import { IoIosMail, IoMdPin } from "react-icons/io";
 import { Cards } from "../cards/Cards";
 import Image from "next/image";
 import { Button } from "@/ui/designsystem/Button";
+import { socialMedia } from "../data/skillsData";
 
 interface Props {}
 
@@ -64,86 +65,30 @@ export const Contact = ({}: Props) => {
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-3 gap-2">
-            <Cards variant="small" className="space-y-3">
-              <div className="relative w-[32px] aspect-square">
-                <Image
-                  src="/assets/svg/insta.svg"
-                  alt="insta"
-                  fill
-                  style={{ objectFit: "cover" }}
-                />
-              </div>
-              <Typographie>@killian_bd_</Typographie>
-              <Button variant="insta" size="small">
-                Follow 72
-              </Button>
-            </Cards>
-            <Cards variant="small" className="space-y-3 bg-[#F0F6F9] ">
-              <div className="relative w-[32px] aspect-square">
-                <Image
-                  src="/assets/svg/Linkedin.svg"
-                  alt="linkedin"
-                  fill
-                  style={{ objectFit: "cover" }}
-                />
-              </div>
-              <Typographie>linkedin.com</Typographie>
-            </Cards>
-            <Cards variant="small" className="space-y-3 bg-[#D2EAFA] ">
-              <div className=" bg-[#9ECAEB] relative w-[40px] aspect-square rounded-full">
-                <Image
-                  src="/assets/svg/meicloud.svg"
-                  alt="linkedin"
-                  fill
-                  style={{ objectFit: "cover" }}
-                />
-              </div>
-              <Typographie>killian.boularand@icloud.com</Typographie>
-              <Typographie variant="body-bold">Icloud</Typographie>
-            </Cards>
-            <Cards variant="small" className="space-y-3 bg-[#F6F8FA]">
-              <div className="relative w-[32px] aspect-square">
-                <Image
-                  src="/assets/svg/git.svg"
-                  alt="insta"
-                  fill
-                  style={{ objectFit: "cover" }}
-                />
-              </div>
-              <Typographie>Killian.bld</Typographie>
-              <Button variant="git" size="small">
-                Follow
-              </Button>
-            </Cards>
-            <Cards variant="small" className="space-y-3 bg-[#F2DAE3]">
-              <div className="relative w-[32px] aspect-square">
-                <Image
-                  src="/assets/svg/dribbble.svg"
-                  alt="insta"
-                  fill
-                  style={{ objectFit: "cover" }}
-                />
-              </div>
-              <Typographie>Dribbble</Typographie>
-              <Button variant="dribble" size="small">
-                Follow
-              </Button>
-            </Cards>
-            <Cards variant="small" className="space-y-3">
-              <div className="relative w-[32px] aspect-square">
-                <Image
-                  src="/assets/svg/cv.svg"
-                  alt="insta"
-                  fill
-                  style={{ objectFit: "cover" }}
-                />
-              </div>
-              <Typographie className="max-w-[100px]">Curriculum vitæ</Typographie>
-              <Button variant="insta" size="small">
-                Download
-              </Button>
-            </Cards>
+          <div className="grid">
+            {socialMedia.map((item, index) => (
+              <Cards
+                key={index}
+                variant="small"
+                className={`space-y-2 ${item.bgColor}`}
+                Style={{backgroundColor: item.bgColor}} // Passer la classe Style comme une prop
+              >
+                <div className="relative w-[32px] aspect-square">
+                  <Image
+                    src={item.logo}
+                    alt="insta"
+                    fill
+                    style={{ objectFit: "cover" }}
+                  />
+                </div>
+                <Typographie>{item.name}</Typographie>
+                {item.buttonVariant !== "none" ? (
+                  item.buttonVariant
+                ) : (
+                  <Typographie variant="body-bold">{item.subtitle}</Typographie>
+                )}
+              </Cards>
+            ))}
           </div>
         </div>
       </Cards>

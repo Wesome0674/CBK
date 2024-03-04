@@ -4,7 +4,7 @@ import { SiArduino } from "react-icons/si"; // iot
 import { MdOutlineDesignServices } from "react-icons/md";
 import { FaReact } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
-
+import { Button } from "@/ui/designsystem/Button";
 
 export const Datatableau = [
   {
@@ -47,7 +47,7 @@ export const workData = [
       second: "OpenWeather API",
     },
     img: "/assets/images/weather.png",
-    position: "right"
+    position: "right",
   },
   {
     id: 2,
@@ -59,7 +59,7 @@ export const workData = [
       second: SiTailwindcss,
     },
     img: "/assets/images/foodapp.png",
-    position: "left"
+    position: "left",
   },
   {
     id: 3,
@@ -71,6 +71,72 @@ export const workData = [
       second: SiTailwindcss,
     },
     img: "/assets/images/portfolio.png",
-    position: "right"
+    position: "right",
+  },
+];
+
+export const socialMedia = [
+  {
+    id: 1,
+    logo: "/assets/svg/insta.svg",
+    name: "@killian_bd_",
+    buttonVariant: (
+      <Button variant="insta" size="small">
+        Follow 72
+      </Button>
+    ),
+    textButton: "Follow",
+    bgColor: "white",
+  },
+  {
+    id: 2,
+    logo: "/assets/svg/Linkedin.svg",
+    name: "linkedin.com",
+    buttonVariant: "none",
+    bgColor: "#F0F6F9",
+  },
+  {
+    id: 3,
+    logo: "/assets/svg/meicloud.svg",
+    name: "killian.boularand@icloud.com",
+    buttonVariant: "none",
+    subtitle: "Icloud",
+    bgColor: "#D2EAFA",
+  },
+  {
+    id: 4,
+    logo: "/assets/svg/git.svg",
+    name: "Killian.bld",
+    buttonVariant: (
+      <Button variant="git" size="small">
+        Follow
+      </Button>
+    ),
+    textButton: "Follow",
+    bgColor: "#F6F8FA",
+  },
+  {
+    id: 5,
+    logo: "/assets/svg/dribbble.svg",
+    name: "Dribbble",
+    buttonVariant: (
+      <Button variant="dribble" size="small">
+        Follow
+      </Button>
+    ),
+    textButton: "Follow",
+    bgColor: "#F2DAE3",
+  },
+  {
+    id: 6,
+    logo: "/assets/svg/cv.svg",
+    name: "Curriculum vitæ",
+    buttonVariant: (
+      <Button variant="insta" size="small">
+        Download
+      </Button>
+    ),
+    textButton: "Download",
+    bgColor: "white",
   },
 ];
