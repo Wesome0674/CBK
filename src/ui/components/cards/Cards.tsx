@@ -27,7 +27,6 @@ export const Cards = ({ className, children, variant = "medium", Style }: Props)
       className={clsx(
         className,
         variantStyles,
-        "grid place-content-center w-fit"
       )}
       style={Style} // Correctif : ajouter le style dynamique
     >

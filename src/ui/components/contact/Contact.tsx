@@ -7,9 +7,9 @@ import Image from "next/image";
 import { Button } from "@/ui/designsystem/Button";
 import { socialMedia } from "../data/skillsData";
 
-interface Props {}
+interface Props { }
 
-export const Contact = ({}: Props) => {
+export const Contact = ({ }: Props) => {
   return (
     <Container>
       <Cards variant="big" className="mx-auto">
@@ -33,7 +33,7 @@ export const Contact = ({}: Props) => {
               <div className="flex items-center gap-4">
                 <FaPhoneAlt
                   size={40}
-                  className="text-primary bg-primary/20 p-3"
+                  className="text-primary bg-primary/20 p-3 "
                 />
                 <div className="flex flex-col ">
                   <Typographie variant="body-sm" theme="tercery">
@@ -65,29 +65,31 @@ export const Contact = ({}: Props) => {
               </div>
             </div>
           </div>
-          <div className="grid">
+          <div className="grid grid-cols-3 gap-2 auto-rows-fr">
             {socialMedia.map((item, index) => (
-              <Cards
-                key={index}
-                variant="small"
-                className={`space-y-2 ${item.bgColor}`}
-                Style={{backgroundColor: item.bgColor}} // Passer la classe Style comme une prop
-              >
-                <div className="relative w-[32px] aspect-square">
-                  <Image
-                    src={item.logo}
-                    alt="insta"
-                    fill
-                    style={{ objectFit: "cover" }}
-                  />
-                </div>
-                <Typographie>{item.name}</Typographie>
-                {item.buttonVariant !== "none" ? (
-                  item.buttonVariant
-                ) : (
-                  <Typographie variant="body-bold">{item.subtitle}</Typographie>
-                )}
-              </Cards>
+                <Cards
+                  key={index}
+                  variant="small"
+                  className={`space-y-2 ${item.bgColor}`}
+                  Style={{ backgroundColor: item.bgColor }} // Passer la classe Style comme une prop
+                >
+                  <div className="relative w-[32px] aspect-square">
+                    <Image
+                      src={item.logo}
+                      alt="insta"
+                      fill
+                      style={{ objectFit: "cover" }}
+                    />
+                  </div>
+                  <Typographie>{item.name}</Typographie>
+                  {item.buttonVariant !== "none" ? (
+                    item.buttonVariant
+                  ) : (
+                    <Typographie variant="body-bold">
+                      {item.subtitle}
+                    </Typographie>
+                  )}
+                </Cards>
             ))}
           </div>
         </div>

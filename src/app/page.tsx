@@ -11,6 +11,7 @@ import { About } from "@/ui/components/about/About";
 import { Skills } from "@/ui/components/skills/Skills";
 import { Work } from "@/ui/components/work/Work";
 import { Contact } from "@/ui/components/contact/Contact";
+import { Footer } from "@/ui/components/footer/Footer";
 
 export default function Home() {
   return (
@@ -21,40 +22,7 @@ export default function Home() {
       <Skills />
       <Work />
       <Contact />
-      <Container>
-        <Cards variant="small">
-          <Typographie theme="linear" variant="display" component="h1">
-            Typography
-          </Typographie>
-          <Typographie theme="secondary" variant="h1" component="h1">
-            Typography
-          </Typographie>
-          <Typographie theme="tercery" variant="h2" component="h1">
-            Typography
-          </Typographie>
-          <Typographie theme="error" variant="h3" component="h1">
-            Typography
-          </Typographie>
-          <Typographie theme="success" variant="body-base" component="h1">
-            Typography
-          </Typographie>
-          <Typographie theme="light" variant="body-bold" component="h1">
-            Typography
-          </Typographie>
-          <Typographie theme="primary" variant="body-sm" component="h1">
-            Typography
-          </Typographie>
-          <Typographie variant="pre-title" component="h1">
-            Typography
-          </Typographie>
-          <Typographie variant="button-text" component="h1">
-            Typography
-          </Typographie>
-          <Typographie variant="link" component="h1">
-            Typography
-          </Typographie>
-        </Cards>
-      </Container>
+      <Footer />
     </>
   );
 }
