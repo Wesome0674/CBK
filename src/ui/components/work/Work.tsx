@@ -1,6 +1,5 @@
 import { Container } from "../container/Container";
 import { Typographie } from "@/ui/designsystem/typography/Typographie";
-import { FaReact } from "react-icons/fa";
 import { Button } from "@/ui/designsystem/Button";
 import { HiArrowSmallRight } from "react-icons/hi2";
 import Image from "next/image";

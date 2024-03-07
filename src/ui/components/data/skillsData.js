@@ -46,7 +46,7 @@ export const workData = [
       first: FaReact,
       second: "OpenWeather API",
     },
-    img: "/assets/images/weather.png",
+    img: "/assets/images/theweathermockup.png",
     position: "right",
   },
   {
@@ -58,7 +58,7 @@ export const workData = [
       first: FaReact,
       second: SiTailwindcss,
     },
-    img: "/assets/images/foodapp.png",
+    img: "/assets/images/yankeebitesmockup.png",
     position: "left",
   },
   {
@@ -70,7 +70,7 @@ export const workData = [
       first: FaReact,
       second: SiTailwindcss,
     },
-    img: "/assets/images/portfolio.png",
+    img: "/assets/images/portofoliomockup.png",
     position: "right",
   },
 ];
