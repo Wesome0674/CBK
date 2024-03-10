@@ -30,7 +30,7 @@ export const Work = ({}: Props) => {
           className="flex items-center justify-between gap-4 my-20"
         >
           {item.id % 2 === 0 ? (
-            <div className="w-[35em] aspect-video relative rounded-md border border-primary">
+            <div className="w-[35em] aspect-video relative rounded-md  bg-white shadow-md bg-clip-border">
               <Image
                 src={item.img}
                 fill
@@ -44,7 +44,7 @@ export const Work = ({}: Props) => {
           ) : (
             ""
           )}
-          <div className="space-y-2">
+          <div className="space-y-4">
             <Typographie
               theme="tercery"
               variant="body-sm"
@@ -84,7 +84,7 @@ export const Work = ({}: Props) => {
             </div>
           </div>
           {item.id % 2 === 1 ? (
-            <div className="w-[35em] aspect-video relative rounded-md border border-primary">
+            <div className="w-[35em] aspect-video relative rounded-md  bg-white shadow-md bg-clip-border">
               <Image
                 src={item.img}
                 fill

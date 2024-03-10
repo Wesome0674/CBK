@@ -48,7 +48,6 @@ export const workData = [
       second: "OpenWeather API",
     },
     img: "/assets/images/theweathermockup.png",
-   
   },
   {
     id: 2,
@@ -60,7 +59,6 @@ export const workData = [
       second: SiTailwindcss,
     },
     img: "/assets/images/yankeebitesmockup.png",
-  
   },
   {
     id: 3,
@@ -72,7 +70,6 @@ export const workData = [
       second: SiTailwindcss,
     },
     img: "/assets/images/portofoliomockup.png",
-   
   },
 ];
 
@@ -91,7 +88,7 @@ export const socialMedia = [
   },
   {
     id: 2,
-    logo: "/assets/svg/Linkedin.svg",
+    logo: "/assets/svg/linkedin.png",
     name: "linkedin.com",
     buttonVariant: "none",
     bgColor: "#F0F6F9",
@@ -103,6 +100,7 @@ export const socialMedia = [
     buttonVariant: "none",
     subtitle: "Icloud",
     bgColor: "#D2EAFA",
+    otherStyles: "col-span-2",
   },
   {
     id: 4,
@@ -115,6 +113,7 @@ export const socialMedia = [
     ),
     textButton: "Follow",
     bgColor: "#F6F8FA",
+    otherStyles: "col-span-2",
   },
   {
     id: 5,

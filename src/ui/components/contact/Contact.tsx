@@ -65,12 +65,12 @@ export const Contact = ({ }: Props) => {
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-3 gap-2 auto-rows-fr">
+          <div className="grid grid-cols-4 gap-2 auto-rows-fr max-w-[55%]">
             {socialMedia.map((item, index) => (
                 <Cards
                   key={index}
                   variant="small"
-                  className={`space-y-2 ${item.bgColor}`}
+                  className={`space-y-2 ${item.bgColor} ${item.otherStyles}`}
                   Style={{ backgroundColor: item.bgColor }} // Passer la classe Style comme une prop
                 >
                   <div className="relative w-[32px] aspect-square">
