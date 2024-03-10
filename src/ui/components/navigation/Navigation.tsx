@@ -7,7 +7,7 @@ interface Props {}
 
 export const Navigation = ({}: Props) => {
   return (
-    <Container className="flex items-center justify-between gap-5 py-3">
+    <Container className="flex items-center justify-between gap-5 py-6">
       <div className="flex items-center gap-28">
         <h1 className="text-[30px] tracking-wide text-valorant ">CBK</h1>
         <div>

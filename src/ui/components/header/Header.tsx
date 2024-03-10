@@ -11,9 +11,9 @@ interface Props {}
 
 export const Header = ({}: Props) => {
   return (
-    <Container className="flex items-center justify-between my-14 gap-7 ">
-      <div className="space-y-4">
-        <div>
+    <Container className="flex items-center justify-between mt-20 gap-7 ">
+      <div className="space-y-6">
+        <div className="space-y-3">
           <Typographie
             variant="display"
             component="h1"
@@ -56,7 +56,7 @@ export const Header = ({}: Props) => {
       <div></div>
       <div className="relative">
         <div //👈 wrap your Image tag
-          className="drop-shadow-lg bg-black  h-[340px] w-[230px] border-4 border-light rounded origin-bottom -rotate-12 "
+          className="drop-shadow-lg bg-black h-[400px] w-[275px] border-4 border-light rounded origin-bottom -rotate-12 "
         >
           <Image
             src={"/assets/images/meheader.jpeg"}
@@ -66,7 +66,7 @@ export const Header = ({}: Props) => {
           />
         </div>
         <div //👈 wrap your Image tag
-          className=" h-[175px] w-[175px] absolute top-[-25px]  mx-[-230px]"
+          className=" h-[175px] w-[175px] absolute top-[-25px]  mx-[-250px]"
         >
           <Image
             src={"/assets/svg/arrowme.svg"}

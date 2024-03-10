@@ -7,7 +7,7 @@ interface Props {}
 
 export const About = ({}: Props) => {
   return (
-    <Container>
+    <Container className=" translate-y-36">
       <Cards className="mx-auto w-fit grid place-content-center" variant="big">
         <div className="flex flex-col text-center items-center space-y-4">
           <div //👈 wrap your Image tag

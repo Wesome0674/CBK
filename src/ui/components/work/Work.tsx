@@ -20,8 +20,8 @@ export const Work = ({}: Props) => {
           theme="tercery"
           className="max-w-[550px]"
         >
-          &quot;Discover my diverse projects, reflecting passion and dedication in
-          development and design.&quot;
+          &quot;Discover my diverse projects, reflecting passion and dedication
+          in development and design.&quot;
         </Typographie>
       </div>
       {workData.map((item, index) => (
@@ -29,12 +29,13 @@ export const Work = ({}: Props) => {
           key={index}
           className="flex items-center justify-between gap-4 my-20"
         >
-          {item.position === "left" ? (
-            <div className="w-[350px] aspect-video relative ">
+          {item.id % 2 === 0 ? (
+            <div className="w-[35em] aspect-video relative rounded-md border border-primary">
               <Image
                 src={item.img}
                 fill
                 alt="weather"
+                className="w-full h-auto"
                 style={{
                   objectFit: "contain",
                 }}
@@ -82,8 +83,8 @@ export const Work = ({}: Props) => {
               <Button variant="outline">Code on Github Repo</Button>
             </div>
           </div>
-          {item.position === "right" ? (
-            <div className="w-[350px] aspect-video relative ">
+          {item.id % 2 === 1 ? (
+            <div className="w-[35em] aspect-video relative rounded-md border border-primary">
               <Image
                 src={item.img}
                 fill

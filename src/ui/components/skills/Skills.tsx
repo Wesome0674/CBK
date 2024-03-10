@@ -2,12 +2,13 @@ import { Typographie } from "@/ui/designsystem/typography/Typographie";
 import { Container } from "../container/Container";
 import { Cards } from "../cards/Cards";
 import { Datatableau } from "../data/skillsData";
+import { Timeline } from "../timeline/Timeline";
 
 interface Props {}
 
 export const Skills = ({}: Props) => {
   return (
-    <div className="bg-[#F0F1F3] py-20">
+    <div className="bg-[#F0F1F3] pb-20 pt-56 space-y-36 ">
       <Container className="flex items-center justify-between gap-7">
         <div className="space-y-4 flex flex-col items-center">
           <Typographie variant="h1" component="h1">
@@ -50,6 +51,7 @@ export const Skills = ({}: Props) => {
           ))}
         </div>
       </Container>
+      <Timeline />
     </div>
   );
 };

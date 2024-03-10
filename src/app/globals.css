@@ -18,3 +18,11 @@
 .text-valorant {
   font-family: "valorant", sans-serif;
 }
+
+body {
+  background-image: url('/assets/svg/bgportfolio.png');
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
+  /* Autres styles de fond selon vos besoins */
+}

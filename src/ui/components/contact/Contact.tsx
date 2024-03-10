@@ -12,7 +12,7 @@ interface Props { }
 export const Contact = ({ }: Props) => {
   return (
     <Container>
-      <Cards variant="big" className="mx-auto">
+      <Cards variant="big" className="mx-auto my-10">
         <div className="flex items-center justify-between gap-10">
           <div className="space-y-8">
             <div className="space-y-2">
