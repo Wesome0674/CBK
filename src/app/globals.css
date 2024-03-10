@@ -26,3 +26,23 @@ body {
   background-position: center;
   /* Autres styles de fond selon vos besoins */
 }
+
+
+.link-underline {
+  border-bottom-width: 0;
+  background-image: linear-gradient(transparent, transparent), linear-gradient(#fff, #fff);
+  background-size: 0 2px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size .3s ease-in-out;
+}
+
+.link-underline-black {
+ background-image: linear-gradient(90deg, rgba(113,88,226,1) 5%, rgba(205,132,241,1) 50%);
+}
+
+.link-underline:hover {
+  background-size: 100% 2px;
+  background-position: 0 100%
+}
+

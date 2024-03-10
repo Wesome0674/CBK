@@ -16,11 +16,11 @@ export const Navigation = ({}: Props) => {
             className="flex items-center gap-14 cursor-pointer"
             component="span"
           >
-            <span>Home</span>
-            <span>About</span>
-            <span>Skills</span>
-            <span>Projects</span>
-            <span>Contact</span>
+            <span className="link link-underline link-underline-black">Home</span>
+            <span className="link link-underline link-underline-black">About</span>
+            <span className="link link-underline link-underline-black">Skills</span>
+            <span className="link link-underline link-underline-black">Projects</span>
+            <span className="link link-underline link-underline-black">Contact</span>
           </Typographie>
         </div>
       </div>
