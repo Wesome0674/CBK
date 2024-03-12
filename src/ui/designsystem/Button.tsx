@@ -71,10 +71,10 @@ export const Button = ({
     case "large":
       sizeStyles = `text-xl ${
         variant === "icon"
-          ? " flex items-center justify-center w-[60px] h-[60px]"
-          : "py-[10px] px-[25px]"
+          ? " flex items-center justify-center w-[70px] h-[70px]"
+          : "py-[20px] px-[35px]"
       }`;
-      iconSize = 24;
+      iconSize = 25;
       break;
   }
 
