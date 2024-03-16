@@ -4,6 +4,7 @@ import { Button } from "@/ui/designsystem/Button";
 import { HiArrowSmallRight } from "react-icons/hi2";
 import Image from "next/image";
 import { workData } from "../data/skillsData";
+import Link from "next/link";
 
 interface Props {}
 
@@ -79,8 +80,8 @@ export const Work = ({}: Props) => {
               )}
             </div>
             <div className="flex items-center gap-4">
-              <Button icon={{ icon: HiArrowSmallRight }}>Visite website</Button>
-              <Button variant="outline">Code on Github Repo</Button>
+              <Link href={item.hrefSite}><Button icon={{ icon: HiArrowSmallRight }}>Visite website</Button></Link>
+              <Link href={item.hrefCode}><Button variant="outline">Code on Github Repo</Button></Link>
             </div>
           </div>
           {item.id % 2 === 1 ? (

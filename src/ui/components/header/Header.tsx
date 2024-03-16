@@ -1,3 +1,5 @@
+"use client";
+
 import { Typographie } from "@/ui/designsystem/typography/Typographie";
 import { Container } from "../container/Container";
 import { Button } from "@/ui/designsystem/Button";
@@ -6,10 +8,23 @@ import { BsFileEarmarkCode } from "react-icons/bs"; // code header
 import { MdOutlineDesignServices } from "react-icons/md"; // design header
 import { TbWorldWww } from "react-icons/tb"; // www
 import Image from "next/image";
+import Link from "next/link";
 
 interface Props {}
 
 export const Header = ({}: Props) => {
+  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+    // first prevent the default behavior
+    e.preventDefault();
+    // get the href and remove everything before the hash (#)
+    const href = e.currentTarget.href;
+    const targetId = href.replace(/.*\#/, "");
+    // get the element by id and use scrollIntoView
+    const elem = document.getElementById(targetId);
+    elem?.scrollIntoView({
+      behavior: "smooth",
+    });
+  };
   return (
     <Container className="flex items-center justify-between mt-20 gap-7 ">
       <div className="space-y-6">
@@ -49,8 +64,8 @@ export const Header = ({}: Props) => {
           <TbWorldWww size={24} />
         </Typographie>
         <div className="space-x-7">
-          <Button icon={{ icon: HiArrowSmallRight }}>See my Work</Button>
-          <Button variant="outline">Contact me</Button>
+          <Link onClick={handleScroll} href="#work"><Button icon={{ icon: HiArrowSmallRight }}>See my Work</Button></Link>
+          <Link onClick={handleScroll} href="#contact"><Button variant="outline">Contact me</Button></Link>
         </div>
       </div>
       <div></div>

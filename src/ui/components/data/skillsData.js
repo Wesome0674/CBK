@@ -6,6 +6,7 @@ import { FaReact } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
 import { Button } from "@/ui/designsystem/Button";
 import Image from "next/image";
+import Link from "next/link";
 
 export const Datatableau = [
   {
@@ -48,6 +49,8 @@ export const workData = [
       second: "OpenWeather API",
     },
     img: "/assets/images/theweathermockup.png",
+    hrefSite: "https://wesome0674.github.io/The.Weather/",
+    hrefCode: "https://github.com/Wesome0674/The.Weather/tree/main/weather-app",
   },
   {
     id: 2,
@@ -59,6 +62,8 @@ export const workData = [
       second: SiTailwindcss,
     },
     img: "/assets/images/yankeebitesmockup.png",
+    hrefSite: "https://wesome0674.github.io/YankeeBites/",
+    hrefCode: "https://github.com/Wesome0674/YankeeBites",
   },
   {
     id: 3,
@@ -70,6 +75,8 @@ export const workData = [
       second: SiTailwindcss,
     },
     img: "/assets/images/portofoliomockup.png",
+    hrefSite: "https://wesome0674.github.io/myPortfolio/",
+    hrefCode: "https://github.com/Wesome0674/myPortfolio",
   },
 ];
 
@@ -79,9 +86,11 @@ export const socialMedia = [
     logo: "/assets/svg/insta.svg",
     name: "@killian_bd_",
     buttonVariant: (
-      <Button variant="insta" size="small">
-        Follow 72
-      </Button>
+      <Link href="https://www.instagram.com/killian_bd_/?hl=fr">
+        <Button variant="insta" size="small">
+          Follow 72
+        </Button>
+      </Link>
     ),
     textButton: "Follow",
     bgColor: "white",
@@ -107,9 +116,11 @@ export const socialMedia = [
     logo: "/assets/svg/git.svg",
     name: "Killian.bld",
     buttonVariant: (
-      <Button variant="git" size="small">
-        Follow
-      </Button>
+      <Link href="https://github.com/Wesome0674">
+        <Button variant="git" size="small">
+          Follow
+        </Button>
+      </Link>
     ),
     textButton: "Follow",
     bgColor: "#F6F8FA",
@@ -120,9 +131,11 @@ export const socialMedia = [
     logo: "/assets/svg/dribbble.svg",
     name: "Dribbble",
     buttonVariant: (
-      <Button variant="dribble" size="small">
-        Follow
-      </Button>
+      <Link href="https://dribbble.com/Killianbld">
+        <Button  variant="dribble" size="small">
+          Follow
+        </Button>
+      </Link>
     ),
     textButton: "Follow",
     bgColor: "#F2DAE3",

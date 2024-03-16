@@ -70,7 +70,7 @@ export const Contact = ({ }: Props) => {
                 <Cards
                   key={index}
                   variant="small"
-                  className={`space-y-2 ${item.bgColor} ${item.otherStyles}`}
+                  className={`flex flex-col gap-2 ${item.bgColor} ${item.otherStyles}`}
                   Style={{ backgroundColor: item.bgColor }} // Passer la classe Style comme une prop
                 >
                   <div className="relative w-[32px] aspect-square">
