@@ -2,7 +2,6 @@ import { Typographie } from "@/ui/designsystem/typography/Typographie";
 import { Container } from "../container/Container";
 import { Button } from "@/ui/designsystem/Button";
 import { IoChevronDown } from "react-icons/io5";
-import { Link } from "react-scroll/modules";
 
 interface Props {}
 
@@ -17,31 +16,11 @@ export const Navigation = ({}: Props) => {
             className="flex items-center gap-14 cursor-pointer"
             component="span"
           >
-            <Link to="home" smooth={true}>
-              <span className="link link-underline link-underline-black">
-                Home
-              </span>
-            </Link>
-            <Link to="about" smooth={true}>
-              <span className="link link-underline link-underline-black">
-                About
-              </span>
-            </Link>
-            <Link to="skills" smooth={true}>
-              <span className="link link-underline link-underline-black">
-                Skills
-              </span>
-            </Link>
-            <Link to="work" smooth={true}>
-              <span className="link link-underline link-underline-black">
-                Projects
-              </span>
-            </Link>
-            <Link to="contact" smooth={true}>
-              <span className="link link-underline link-underline-black">
-                Contact
-              </span>
-            </Link>
+            <span className="link link-underline link-underline-black">Home</span>
+            <span className="link link-underline link-underline-black">About</span>
+            <span className="link link-underline link-underline-black">Skills</span>
+            <span className="link link-underline link-underline-black">Projects</span>
+            <span className="link link-underline link-underline-black">Contact</span>
           </Typographie>
         </div>
       </div>
