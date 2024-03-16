@@ -11,7 +11,7 @@ interface Props {}
 
 export const Header = ({}: Props) => {
   return (
-    <Container className="flex items-center justify-between mt-20 gap-7 ">
+    <Container  className="flex items-center justify-between mt-20 gap-7 ">
       <div className="space-y-6">
         <div className="space-y-3">
           <Typographie
