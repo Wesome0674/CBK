@@ -13,7 +13,7 @@ export const Contact = ({ }: Props) => {
   return (
     <Container>
       <Cards variant="big" className="mx-auto my-10">
-        <div className="flex items-center justify-between gap-10">
+        <div className="flex flex-col md:flex-row items-center md:justify-between gap-20 md:gap-10">
           <div className="space-y-8">
             <div className="space-y-2">
               <Typographie variant="h1" component="h3">
@@ -65,12 +65,12 @@ export const Contact = ({ }: Props) => {
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-4 gap-2 auto-rows-fr max-w-[55%]">
+          <div className="grid grid-cols-4 gap-2 auto-rows-fr md:max-w-[55%]">
             {socialMedia.map((item, index) => (
                 <Cards
                   key={index}
                   variant="small"
-                  className={`flex flex-col gap-2 ${item.bgColor} ${item.otherStyles}`}
+                  className={`flex flex-col gap-2  ${item.bgColor} ${item.otherStyles}`}
                   Style={{ backgroundColor: item.bgColor }} // Passer la classe Style comme une prop
                 >
                   <div className="relative w-[32px] aspect-square">
@@ -81,7 +81,7 @@ export const Contact = ({ }: Props) => {
                       style={{ objectFit: "cover" }}
                     />
                   </div>
-                  <Typographie>{item.name}</Typographie>
+                  <Typographie className="text-wrap">{item.name}</Typographie>
                   {item.buttonVariant !== "none" ? (
                     item.buttonVariant
                   ) : (

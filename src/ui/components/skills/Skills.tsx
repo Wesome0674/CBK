@@ -9,7 +9,7 @@ interface Props {}
 export const Skills = ({}: Props) => {
   return (
     <div className="bg-[#F0F1F3] pb-20 pt-56 space-y-36 ">
-      <Container className="flex items-center justify-between gap-7">
+      <Container className="flex flex-col md:flex-row items-center justify-between gap-7">
         <div className="space-y-4 flex flex-col items-center">
           <Typographie variant="h1" component="h1">
             My Skills

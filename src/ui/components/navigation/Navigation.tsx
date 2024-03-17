@@ -4,6 +4,7 @@ import { Typographie } from "@/ui/designsystem/typography/Typographie";
 import { Container } from "../container/Container";
 import { Button } from "@/ui/designsystem/Button";
 import { IoChevronDown } from "react-icons/io5";
+import { CgMenuLeft } from "react-icons/cg";
 import Link from "next/link";
 
 interface Props {}
@@ -23,12 +24,13 @@ export const Navigation = ({}: Props) => {
   };
   return (
     <Container className="flex items-center justify-between gap-5 py-6">
-      <div className="flex items-center gap-28">
+      <CgMenuLeft size={35} className="text-secondary block md:hidden" />
+      <div className="flex items-center md:gap-28">
         <h1 className="text-[30px] tracking-wide text-valorant ">CBK</h1>
         <div>
           <Typographie
             variant="link"
-            className="flex items-center gap-14 cursor-pointer"
+            className="items-center gap-14 cursor-pointer hidden md:flex"
             component="span"
           >
             <Link href="#home" onClick={handleScroll}>

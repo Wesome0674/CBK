@@ -28,7 +28,7 @@ export const Work = ({}: Props) => {
       {workData.map((item, index) => (
         <div
           key={index}
-          className="flex items-center justify-between gap-4 my-20"
+          className="flex flex-col md:flex-row items-center justify-between gap-20 md:gap-4 my-20"
         >
           {item.id % 2 === 0 ? (
             <div className="w-[35em] aspect-video relative rounded-md  bg-white shadow-md bg-clip-border">

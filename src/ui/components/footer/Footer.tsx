@@ -40,7 +40,7 @@ export const Footer = ({}: Props) => {
           <Typographie
             variant="body-sm"
             theme="light"
-            className="flex gap-10 items-center cursor-pointer"
+            className="flex flex-col md:flex-row gap-4 md:gap-10 items-center cursor-pointer"
           >
             <Link href="#home" onClick={handleScroll}><span>Home</span></Link>
             <Link href="#about" onClick={handleScroll}><span>About</span></Link>
