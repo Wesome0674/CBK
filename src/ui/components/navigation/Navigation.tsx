@@ -25,7 +25,7 @@ export const Navigation = ({}: Props) => {
   return (
     <Container className="flex items-center justify-between gap-5 py-6">
       <CgMenuLeft size={35} className="text-secondary block md:hidden" />
-      <div className="flex items-center md:gap-28">
+      <div className="flex items-center md:gap-16 lg:gap-28">
         <h1 className="text-[30px] tracking-wide text-valorant ">CBK</h1>
         <div>
           <Typographie

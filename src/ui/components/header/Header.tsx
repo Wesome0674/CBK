@@ -26,7 +26,7 @@ export const Header = ({}: Props) => {
     });
   };
   return (
-    <Container className="flex flex-col md:flex-row items-center justify-between mt-20 gap-7">
+    <Container className="flex flex-col md:flex-row items-center justify-between mt-6 md:mt-14 lg:mt-20 gap-7 ">
       <div className="space-y-6">
         <div className="space-y-3">
           <Typographie
@@ -75,7 +75,7 @@ export const Header = ({}: Props) => {
       <div></div>
       <div className="relative">
         <div //👈 wrap your Image tag
-          className="drop-shadow-lg bg-black h-[400px] w-[275px]  border-4 border-light rounded origin-bottom -rotate-12 "
+          className="drop-shadow-lg bg-black md:h-[400px] w-[200px] h-[325px] md:w-[275px]  border-4 border-light rounded origin-bottom -rotate-12 "
         >
           <Image
             src={"/assets/images/meheader.jpeg"}
@@ -85,7 +85,7 @@ export const Header = ({}: Props) => {
           />
         </div>
         <div //👈 wrap your Image tag
-          className=" aspect-square md:w-[175px] w-[100px] md:block hidden  absolute top-[-25px]  mx-[-250px]"
+          className=" aspect-square md:w-[175px] w-[100px] lg:block hidden  absolute top-[-25px]  mx-[-250px]"
         >
           <Image
             src={"/assets/svg/arrowme.svg"}

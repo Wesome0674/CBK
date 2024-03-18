@@ -49,7 +49,7 @@ export const Timeline = () => {
                         >
                           {item.title}
                         </Typographie>
-                        <div className="flex items-center gap-2">
+                        <div className="flex items-center gap-2 flex-wrap">
                           {item.icons}
                         </div>
                       </div>

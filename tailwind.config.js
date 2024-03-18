@@ -28,6 +28,13 @@ module.exports = {
           fontWeight: "600",
         },
       ],
+      "3.5xl": [
+        "50px",
+        {
+          lineHeight: '75px',
+          fontWeight: "600",
+        },
+      ],
       "3xl": [
         "40px",
         {
