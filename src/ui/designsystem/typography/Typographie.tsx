@@ -66,7 +66,7 @@ export const Typographie = ({
       variantStyles = "lg:text-4xl text-3.5xl";
       break;
     case "h1":
-      variantStyles = "text-3xl";
+      variantStyles = "sm:text-3xl text-2xl";
       break;
     case "h2":
       variantStyles = "text-2xl";

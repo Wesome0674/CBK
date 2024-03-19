@@ -12,13 +12,13 @@ export const Cards = ({ className, children, variant = "medium", Style }: Props)
 
   switch (variant) {
     case "big":
-      variantStyles = "bg-white rounded-lg drop-shadow-md px-[80px] py-[80px]";
+      variantStyles = "bg-white rounded-lg drop-shadow-md lg:px-[80px] lg:py-[80px] px-[20px] py-[20px]";
       break;
     case "medium":
-      variantStyles = "bg-white rounded-md px-[32px] py-[32px]";
+      variantStyles = "bg-white rounded-md md:p-[32px] p-[20px]";
       break;
     case "small":
-      variantStyles = "rounded-lg px-[20px] py-[20px] border border-tercery";
+      variantStyles = "rounded-lg p-[20px]  border border-tercery";
       break;
   }
 

@@ -15,7 +15,7 @@ const QuickMessage = () => {
             {show ?
             <>
             <div onClick={() => setShow(!show)} className="fixed top-0 left-0 w-screen h-screen bg-black/20 z-10"></div>
-                <div className=" fixed z-30 bottom-6 right-6 sm:w-[20em] md:w-[25em]">
+                <div className=" fixed z-30 bottom-6 right-6 w-[20em] md:w-[25em]">
                     <Cards variant="medium" className="flex flex-col shadow-md">
                         <div >
                             <Typographie variant="h3" className="font-semi-bold flex items-center justify-between">

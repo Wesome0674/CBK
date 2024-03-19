@@ -75,7 +75,7 @@ export const Header = ({}: Props) => {
       <div></div>
       <div className="relative">
         <div //👈 wrap your Image tag
-          className="drop-shadow-lg bg-black md:h-[400px] w-[200px] h-[325px] md:w-[275px]  border-4 border-light rounded origin-bottom -rotate-12 "
+          className="drop-shadow-lg bg-black md:h-[400px] w-[200px] h-[325px] md:w-[275px]  border-4 border-light rounded origin-bottom md:-rotate-12 "
         >
           <Image
             src={"/assets/images/meheader.jpeg"}

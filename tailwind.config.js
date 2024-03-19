@@ -29,9 +29,9 @@ module.exports = {
         },
       ],
       "3.5xl": [
-        "50px",
+        "40px",
         {
-          lineHeight: '75px',
+          lineHeight: '55px',
           fontWeight: "600",
         },
       ],

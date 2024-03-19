@@ -83,8 +83,8 @@ export const Work = ({ }: Props) => {
                   )}
                 </div>
                 <div className="flex items-center gap-4">
-                  <Link href={item.hrefSite}><Button icon={{ icon: HiArrowSmallRight }}>Visite website</Button></Link>
-                  <Link href={item.hrefCode}><Button variant="outline">Code on Github Repo</Button></Link>
+                  <Link href={item.hrefSite}><Button size="small" icon={{ icon: HiArrowSmallRight }}>Visite website</Button></Link>
+                  <Link href={item.hrefCode}><Button size="small" variant="outline">Code on Github Repo</Button></Link>
                 </div>
               </div>
               <div className="md:w-[35em] w-[25em] aspect-video relative rounded-md  bg-white shadow-md bg-clip-border">

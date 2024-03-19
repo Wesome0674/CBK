@@ -65,7 +65,7 @@ export const Contact = ({ }: Props) => {
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-4 gap-2 auto-rows-fr md:max-w-[55%]">
+          <div className="grid lg:grid-cols-4 grid-cols-2 gap-2 auto-rows-fr md:max-w-[55%]">
             {socialMedia.map((item, index) => (
                 <Cards
                   key={index}
