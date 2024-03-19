@@ -14,9 +14,9 @@
 
 @font-face {
   font-family: 'VALORANT';
-  src: url('Fonts/VALORANT-Regular.woff2') format('woff2'),
-      url('Fonts/VALORANT-Regular.woff') format('woff'),
-      url('Fonts/VALORANT-Regular.ttf') format('truetype');
+  src: url('/Fonts/VALORANT-Regular.woff2') format('woff2'),
+      url('/Fonts/VALORANT-Regular.woff') format('woff'),
+      url('/Fonts/VALORANT-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
