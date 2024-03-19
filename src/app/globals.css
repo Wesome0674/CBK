@@ -10,13 +10,20 @@
   }
 }
 
+
+
 @font-face {
-  font-family: "valorant";
-  src: url(/Fonts/ValorantFont.ttf);
+  font-family: 'VALORANT';
+  src: url('Fonts/VALORANT-Regular.woff2') format('woff2'),
+      url('Fonts/VALORANT-Regular.woff') format('woff'),
+      url('Fonts/VALORANT-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 .text-valorant {
-  font-family: "valorant", sans-serif;
+  font-family: "VALORANT", sans-serif;
 }
 
 body {
