@@ -27,6 +27,11 @@ export const Navigation = ({ }: Props) => {
       behavior: "smooth",
     });
   };
+
+  const functions = () => {
+    handleScroll;
+    setShow(!show)
+  }
   return (
     <>
       {show ? <div className="p-6 block md:hidden fixed top-0 left-0 z-50 w-screen h-full space-y-10 bgImg bg-[#F0F1F3]">
@@ -39,27 +44,27 @@ export const Navigation = ({ }: Props) => {
           className="gap-8 cursor-pointer flex flex-col"
           component="span"
         >
-          <Link href="#home" onClick={handleScroll}>
+          <Link href="#home" onClick={functions}>
             <span className="link link-underline link-underline-black">
               Home
             </span>
           </Link>
-          <Link href="#about" onClick={handleScroll}>
+          <Link href="#about" onClick={functions}>
             <span className="link link-underline link-underline-black">
               About
             </span>
           </Link>
-          <Link href="#skills" onClick={handleScroll}>
+          <Link href="#skills" onClick={functions}>
             <span className="link link-underline link-underline-black">
               Skills
             </span>
           </Link>
-          <Link href="#work" onClick={handleScroll}>
+          <Link href="#work" onClick={functions}>
             <span className="link link-underline link-underline-black">
               Projects
             </span>
           </Link>
-          <Link href="#contact" onClick={handleScroll}>
+          <Link href="#contact" onClick={functions}>
             <span className="link link-underline link-underline-black">
               Contact
             </span>
