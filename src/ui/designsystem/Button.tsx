@@ -56,7 +56,7 @@ export const Button = ({
       sizeStyles = `text-sm  ${
         variant === "icon"
           ? " flex items-center justify-center w-[40px] h-[40px]"
-          : "py-[5px] px-[10px]"
+          : "py-[10px] px-[15px]"
       }`;
       iconSize = 18;
       break;
