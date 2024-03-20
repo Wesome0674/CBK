@@ -14,9 +14,9 @@
 
 @font-face {
   font-family: 'VALORANT';
-  src: url('/public/assets/fonts/VALORANT-Regular.woff2') format('woff2'),
-      url('/public/assets/fonts/VALORANT-Regular.woff') format('woff'),
-      url('/public/assets/fonts/VALORANT-Regular.ttf') format('truetype');
+  src: url('/assets/fonts/VALORANT-Regular.woff2') format('woff2'),
+      url('/assets/fonts/VALORANT-Regular.woff') format('woff'),
+      url('/assets/fonts/VALORANT-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -26,11 +26,11 @@
   font-family: "VALORANT", sans-serif;
 }
 
-body {
+body, .bgImg {
   background-image: url('/assets/svg/bgportfolio.png');
   background-size: cover;
-  background-repeat: repeat;
-  background-position: center;
+  background-repeat: no-repeat;
+  
   /* Autres styles de fond selon vos besoins */
 }
 
