@@ -6,11 +6,13 @@ interface Props {
   icon?: { icon: React.ElementType };
   iconTheme?: "accent" | "secondary";
   iconPosition?: "left" | "right";
+  className?: string;
   children?: React.ReactNode;
 }
 
 export const Button = ({
   size = "medium",
+  className,
   variant = "accent",
   icon,
   iconTheme = "accent",
@@ -82,13 +84,13 @@ export const Button = ({
     <>
       <button
         type="button"
-        className={clsx(variantStyles, sizeStyles, iconSize)}
+        className={clsx(variantStyles, sizeStyles, iconSize, className)}
       >
         {icon && variant === "icon" ? (
           <icon.icon size={iconSize} />
         ) : (
           <>
-            <div className={clsx(icon &&"flex items-center gap-2")}>
+            <div className={clsx(icon && "flex items-center gap-2")}>
               {icon && iconPosition === "left" && <icon.icon size={iconSize} />}
               {children}
               {icon && iconPosition === "right" && (

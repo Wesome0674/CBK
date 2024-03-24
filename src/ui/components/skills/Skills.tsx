@@ -1,12 +1,22 @@
+"use client"
+
 import { Typographie } from "@/ui/designsystem/typography/Typographie";
 import { Container } from "../container/Container";
 import { Cards } from "../cards/Cards";
 import { Datatableau } from "../data/skillsData";
 import { Timeline } from "../timeline/Timeline";
+/* import Aos from 'aos'
+import { useEffect } from "react";
+import 'aos/dist/aos.css'; */
 
 interface Props {}
 
 export const Skills = ({}: Props) => {
+
+ /*  useEffect(() => {
+    Aos.init();
+  }, []) */
+
   return (
     <div className="bg-[#F0F1F3] pb-20 pt-56 space-y-36 ">
       <Container className="flex flex-col md:flex-row items-center justify-between gap-7">
@@ -30,7 +40,7 @@ export const Skills = ({}: Props) => {
         </div>
         <div className="grid grid-cols-2 gap-4">
           {Datatableau.map((item, index) => (
-            <Cards key={index} variant="medium" className="space-y-2">
+            <Cards  data-aos="fade-down" key={index} variant="medium" className="space-y-2">
               {
                 <item.icon
                   size={40}

@@ -1,6 +1,7 @@
 "use client";
 
 import { Typographie } from "@/ui/designsystem/typography/Typographie";
+import { useEffect } from "react";
 import { Container } from "../container/Container";
 import { Button } from "@/ui/designsystem/Button";
 import { HiArrowSmallRight } from "react-icons/hi2"; // right arrow
@@ -9,10 +10,18 @@ import { MdOutlineDesignServices } from "react-icons/md"; // design header
 import { TbWorldWww } from "react-icons/tb"; // www
 import Image from "next/image";
 import Link from "next/link";
+/* import Aos from 'aos'
+import 'aos/dist/aos.css';
+ */
 
 interface Props {}
 
 export const Header = ({}: Props) => {
+
+  /* useEffect(() => {
+    Aos.init();
+  }, [])
+ */
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     // first prevent the default behavior
     e.preventDefault();
@@ -73,7 +82,7 @@ export const Header = ({}: Props) => {
         </div>
       </div>
       <div></div>
-      <div className="relative">
+      <div className="relative"  data-aos="fade-left">
         <div //👈 wrap your Image tag
           className="drop-shadow-lg bg-black md:h-[400px] w-[200px] h-[325px] md:w-[275px]  border-4 border-light rounded origin-bottom md:-rotate-12 "
         >

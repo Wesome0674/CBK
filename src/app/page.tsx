@@ -5,12 +5,12 @@ import { Skills } from "@/ui/components/skills/Skills";
 import { Work } from "@/ui/components/work/Work";
 import { Contact } from "@/ui/components/contact/Contact";
 import { Footer } from "@/ui/components/footer/Footer";
-import QuickMessage from "@/ui/components/quickMessage/QuickMessage";
+import Form from "@/ui/components/quickMessage/Form"
 
 export default function Home() {
   return (
     <>
-      <QuickMessage />
+      <Form /> 
       <Navigation />
       <div id="home">
         <Header />

@@ -88,7 +88,7 @@ export const socialMedia = [
     buttonVariant: (
       <Link href="https://www.instagram.com/killian_bd_/?hl=fr">
         <Button variant="insta" size="small">
-          Follow 72
+          Follow
         </Button>
       </Link>
     ),
