@@ -39,7 +39,7 @@ export const Skills = ({}: Props) => {
         </div>
         <div className="grid grid-cols-2 gap-4">
           {Datatableau.map((item, index) => (
-            <div  className="bg-white rounded-md md:p-[32px] p-[20px]"  data-aos="fade-down">
+            <div key={index} className="bg-white rounded-md md:p-[32px] p-[20px]"  data-aos="fade-down">
                 {
                   <item.icon
                     size={40}
