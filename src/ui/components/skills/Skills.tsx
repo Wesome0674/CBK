@@ -1,21 +1,20 @@
-"use client"
+"use client";
 
 import { Typographie } from "@/ui/designsystem/typography/Typographie";
 import { Container } from "../container/Container";
 import { Cards } from "../cards/Cards";
 import { Datatableau } from "../data/skillsData";
 import { Timeline } from "../timeline/Timeline";
-/* import Aos from 'aos'
+import Aos from "aos";
 import { useEffect } from "react";
-import 'aos/dist/aos.css'; */
+import "aos/dist/aos.css";
 
 interface Props {}
 
 export const Skills = ({}: Props) => {
-
- /*  useEffect(() => {
+  useEffect(() => {
     Aos.init();
-  }, []) */
+  }, []);
 
   return (
     <div className="bg-[#F0F1F3] pb-20 pt-56 space-y-36 ">
@@ -40,24 +39,24 @@ export const Skills = ({}: Props) => {
         </div>
         <div className="grid grid-cols-2 gap-4">
           {Datatableau.map((item, index) => (
-            <Cards  data-aos="fade-down" key={index} variant="medium" className="space-y-2">
-              {
-                <item.icon
-                  size={40}
-                  className="text-primary bg-primary/20 p-2"
-                />
-              }
-              <Typographie variant="body-bold" component="h4">
-                {item.title}
-              </Typographie>
-              <Typographie
-                className="max-w-[200px]"
-                variant="body-sm"
-                theme="tercery"
-              >
-                {item.text}
-              </Typographie>
-            </Cards>
+            <div  className="bg-white rounded-md md:p-[32px] p-[20px]"  data-aos="fade-down">
+                {
+                  <item.icon
+                    size={40}
+                    className="text-primary bg-primary/20 p-2"
+                  />
+                }
+                <Typographie variant="body-bold" component="h4">
+                  {item.title}
+                </Typographie>
+                <Typographie
+                  className="max-w-[200px]"
+                  variant="body-sm"
+                  theme="tercery"
+                >
+                  {item.text}
+                </Typographie>
+            </div>
           ))}
         </div>
       </Container>

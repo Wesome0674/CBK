@@ -10,18 +10,18 @@ import { MdOutlineDesignServices } from "react-icons/md"; // design header
 import { TbWorldWww } from "react-icons/tb"; // www
 import Image from "next/image";
 import Link from "next/link";
-/* import Aos from 'aos'
+import Aos from 'aos'
 import 'aos/dist/aos.css';
- */
+
 
 interface Props {}
 
 export const Header = ({}: Props) => {
 
-  /* useEffect(() => {
+  useEffect(() => {
     Aos.init();
   }, [])
- */
+
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     // first prevent the default behavior
     e.preventDefault();

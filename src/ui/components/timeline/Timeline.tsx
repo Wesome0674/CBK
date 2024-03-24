@@ -1,8 +1,17 @@
+"use client";
+
 import { Typographie } from "@/ui/designsystem/typography/Typographie";
-import Image from "next/image";
 import { timelineData } from "../data/skillsData";
+import Aos from "aos";
+import { useEffect } from "react";
+import "aos/dist/aos.css";
+
+interface Props {}
 
 export const Timeline = () => {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
     <>
       <div>
@@ -21,7 +30,7 @@ export const Timeline = () => {
                       {item.id}
                     </div>
                   </div>
-                  <div key={index} className="col-span-4 w-full h-full ">
+                  <div  data-aos="fade-up-left" key={index} className="col-span-4 w-full h-full ">
                     <div className="w-full h-full bg-white rounded-md p-4 md:pl-4 space-y-3">
                       <div className="flex items-center gap-3">
                         <Typographie
@@ -40,7 +49,7 @@ export const Timeline = () => {
                 </>
               ) : (
                 <>
-                  <div key={index} className="col-span-4 w-full h-full ">
+                  <div  data-aos="fade-up-right" key={index} className="col-span-4 w-full h-full ">
                     <div className="w-full h-full bg-white rounded-md p-4 md:pl-4 space-y-3">
                       <div className="flex items-center gap-3">
                         <Typographie
