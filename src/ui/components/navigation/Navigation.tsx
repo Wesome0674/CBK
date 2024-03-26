@@ -114,8 +114,8 @@ export const Navigation = ({ }: Props) => {
             name="language"
             className="w-full bg-transparent appearance-none border-none focus:outline-none cursor-pointer"
           >
-            <option className="text-black">Us English</option>
-            <option className="text-black">Fr French</option>
+            <option className=" text-secondary ">Us English</option>
+            <option className=" text-secondary ">Fr French</option>
           </select>
         </Button>
       </Container>

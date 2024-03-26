@@ -14,6 +14,7 @@ import Aos from 'aos'
 import 'aos/dist/aos.css';
 
 
+
 interface Props {}
 
 export const Header = ({}: Props) => {
@@ -21,6 +22,7 @@ export const Header = ({}: Props) => {
   useEffect(() => {
     Aos.init();
   }, [])
+
 
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     // first prevent the default behavior

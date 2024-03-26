@@ -7,11 +7,15 @@ import { Contact } from "@/ui/components/contact/Contact";
 import { Footer } from "@/ui/components/footer/Footer";
 import Form from "@/ui/components/quickMessage/Form"
 import Loader from "@/ui/components/loader/Loader";
+import { useTranslations } from "next-intl";
+
 
 
 export default function Home() {
+  const t = useTranslations("Index");
   return (
     <>
+    <h1>{t('title')}</h1>
       <Form /> 
       <Loader/>
       <Navigation />
