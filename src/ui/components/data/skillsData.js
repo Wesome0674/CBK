@@ -132,7 +132,7 @@ export const socialMedia = [
     name: "Dribbble",
     buttonVariant: (
       <Link href="https://dribbble.com/Killianbld">
-        <Button  variant="dribble" size="small">
+        <Button variant="dribble" size="small">
           Follow
         </Button>
       </Link>
@@ -145,9 +145,11 @@ export const socialMedia = [
     logo: "/assets/svg/cv.svg",
     name: "Curriculum vitæ",
     buttonVariant: (
-      <Button variant="insta" size="small">
-        Download
-      </Button>
+      <Link href="https://www.canva.com/design/DAGAWiwOtAQ/6oSl7Nb3oZiWh9x7aKZhIg/view?utm_content=DAGAWiwOtAQ&utm_campaign=designshare&utm_medium=link&utm_source=editor">
+        <Button variant="insta" size="small">
+          Download
+        </Button>
+      </Link>
     ),
     textButton: "Download",
     bgColor: "white",
