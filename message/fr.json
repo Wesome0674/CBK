@@ -44,5 +44,23 @@
     "text6": "Utiliser Python pour programmer des cartes Raspberry Pi pour des projets personnels.",
     "title7": "Technologies Web émergentes",
     "text7": "Apprendre Next.js pour créer des applications Web modernes et performantes. Explorer TypeScript pour améliorer la qualité et la maintenabilité des projets Web."
+  },
+  "Work": {
+    "intro": "Découvrez mes divers projets, reflétant la passion et le dévouement dans le développement et le design.",
+    "name1": "App Météo",
+    "text1": "Un site Web météo permettant aux utilisateurs de vérifier la température, l'humidité, les précipitations et d'autres détails météorologiques pour n'importe quelle ville ou pays dans le monde.",
+    "name2": "App de Nourriture",
+    "text2": "Mon projet initial utilisant React et Tailwind CSS, permettant aux utilisateurs d'ajouter des produits alimentaires à leur panier, de les examiner et de supprimer des sélections.",
+    "name3": "Portfolio",
+    "text3": "Un portfolio présentant mes compétences et mes projets, créé pour travailler en freelance sur des plateformes comme Fiverr.",
+    "buttonPrimary": "Voir le site",
+    "buttonSecondary": "Code sur un Repo Github",
+    "madeWith": "Crée Avec"
+  },
+  "Contact": {
+    "title": "Prenons contact",
+    "text": "N'hésitez pas à me contacter par téléphone ou via mes réseaux sociaux. Je suis toujours disponible pour me connecter !",
+    "phone": "Appellez-moi maintenant:",
+    "email": "Mon Email:"
   }
-  }
+}

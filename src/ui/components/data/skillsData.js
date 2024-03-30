@@ -9,8 +9,8 @@ export const workData = [
   {
     id: 1,
     title: "The.Weather",
-    subtitle: "Weather App",
-    text: "A weather website enabling users to check temperature, humidity, rainfall, and other weather details for any city or country worldwide.",
+    subtitle: "name1",
+    text: "text1",
     madeUsing: {
       first: FaReact,
       second: "OpenWeather API",
@@ -22,8 +22,8 @@ export const workData = [
   {
     id: 2,
     title: "YankeeBites",
-    subtitle: "Food App",
-    text: "My initial project using React and Tailwind CSS, allowing users to add food items to their cart, review them, and remove selections.",
+    subtitle: "name2",
+    text: "text2",
     madeUsing: {
       first: FaReact,
       second: SiTailwindcss,
@@ -35,8 +35,8 @@ export const workData = [
   {
     id: 3,
     title: "Professional Portfolio",
-    subtitle: "Portfolio",
-    text: "A portfolio showcasing my skills and projects, created for freelancing on platforms like Fiverr.",
+    subtitle: "name3",
+    text: "text3",
     madeUsing: {
       first: FaReact,
       second: SiTailwindcss,
@@ -123,94 +123,5 @@ export const socialMedia = [
   },
 ];
 
-/* export const timelineData = [
-  {
-    id: 1,
-    title: "Code Discovery",
-    icons: (
-      <>
-        <div className="relative w-6 aspect-square ">
-          <Image alt="logo" fill src="/assets/svg/html.svg" />
-        </div>
-        <div className="relative w-6 aspect-square ">
-          <Image alt="logo" fill src="/assets/svg/css.svg" />
-        </div>
-        <div className="relative w-6 aspect-square ">
-          <Image alt="logo" fill src="/assets/svg/python.svg" />
-        </div>
-      </>
-    ),
-    text: "Initial steps into web development during high school science classes. Basics of Python explored during math courses.",
-  },
-  {
-    id: 2,
-    title: "Introduction to JavaScript",
-    icons: (
-      <div className="relative w-6 aspect-square ">
-        <Image alt="logo" fill src="/assets/svg/js.svg" />
-      </div>
-    ),
-    text: " Discovery of JavaScript and its capabilities as a programming language.",
-  },
-  {
-    id: 3,
-    title: "Mastery of React",
-    icons: (
-      <div className="relative w-6 aspect-square ">
-        <Image alt="logo" fill src="/assets/svg/react.svg" />
-      </div>
-    ),
-    text: "Learning the React framework to develop dynamic and interactive web applications.",
-  },
-  {
-    id: 4,
-    title: "Exploration of Tailwind CSS",
-    icons: (
-      <div className="relative w-6 aspect-square ">
-        <Image alt="logo" fill src="/assets/svg/tailwindcss.svg" />
-      </div>
-    ),
-    text: "Discovery and use of Tailwind CSS to simplify and expedite the design process.",
-  },
-  {
-    id: 5,
-    title: "Knowledge Expansion",
-    icons: (
-      <>
-        <div className="relative w-6 aspect-square ">
-          <Image alt="logo" fill src="/assets/svg/c.svg" />
-        </div>
-        <div className="relative w-6 aspect-square ">
-          <Image alt="logo" fill src="/assets/svg/php.svg" />
-        </div>
-      </>
-    ),
-    text: "Learning the C language to grasp fundamental programming concepts and exploring PHP for server-side web development.",
-  },
-  {
-    id: 6,
-    title: "Raspberry Pi Programming",
-    icons: (
-      <div className="relative w-6 aspect-square ">
-        <Image alt="logo" fill src="/assets/svg/raspberrypi.svg" />
-      </div>
-    ),
-    text: "Using Python to program Raspberry Pi boards for personal projects.",
-  },
-  {
-    id: 7,
-    title: " Emerging Web Technologies",
-    icons: (
-      <>
-        <div className="relative w-6 aspect-square ">
-          <Image alt="logo" fill src="/assets/svg/next.svg" />
-        </div>
-        <div className="relative w-6 aspect-square ">
-          <Image alt="logo" fill src="/assets/svg/TypeScript.svg" />
-        </div>
-      </>
-    ),
-    text: "Learning Next.js to create modern and high-performance web applications. Exploring TypeScript to enhance the quality and maintainability of web projects.",
-  },
-];
- */
+
+ 

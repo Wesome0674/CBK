@@ -6,10 +6,14 @@ import { Cards } from "../cards/Cards";
 import Image from "next/image";
 import { Button } from "@/ui/designsystem/Button";
 import { socialMedia } from "../data/skillsData";
+import { useTranslations } from "next-intl";
 
 interface Props { }
 
 export const Contact = ({ }: Props) => {
+
+  const t = useTranslations("Contact")
+
   return (
     <Container>
       <Cards variant="big" className="mx-auto my-10">
@@ -17,7 +21,7 @@ export const Contact = ({ }: Props) => {
           <div className="space-y-8">
             <div className="space-y-2">
               <Typographie variant="h1" component="h3">
-                Let&apos;s get in touch
+                {t("title")}
               </Typographie>
               <Typographie
                 className="max-w-[350px]"
@@ -25,8 +29,7 @@ export const Contact = ({ }: Props) => {
                 component="p"
                 theme="tercery"
               >
-                Feel free to contact me via phone or through my social media
-                channels. I&apos;m always available to connect!
+               {t("text")}
               </Typographie>
             </div>
             <div className="space-y-6">
@@ -37,7 +40,7 @@ export const Contact = ({ }: Props) => {
                 />
                 <div className="flex flex-col ">
                   <Typographie variant="body-sm" theme="tercery">
-                    Call Me Now:
+                    {t("phone")}
                   </Typographie>
                   <Typographie>06-03-85-03-49</Typographie>
                 </div>
@@ -49,7 +52,7 @@ export const Contact = ({ }: Props) => {
                 />
                 <div className="flex flex-col ">
                   <Typographie variant="body-sm" theme="tercery">
-                    My Email:
+                    {t("email")}
                   </Typographie>
                   <Typographie>killian.boularand@outlook.fr</Typographie>
                 </div>

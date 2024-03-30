@@ -3,10 +3,13 @@ import Image from "next/image";
 import { Container } from "../container/Container";
 import { Typographie } from "@/ui/designsystem/typography/Typographie";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 interface Props {}
 
 export const Footer = ({}: Props) => {
+  const t = useTranslations("Navigation");
+
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     // first prevent the default behavior
     e.preventDefault();
@@ -42,11 +45,21 @@ export const Footer = ({}: Props) => {
             theme="light"
             className="flex flex-col md:flex-row gap-4 md:gap-10 items-center cursor-pointer"
           >
-            <Link href="#home" onClick={handleScroll}><span>Home</span></Link>
-            <Link href="#about" onClick={handleScroll}><span>About</span></Link>
-            <Link href="#skills" onClick={handleScroll}><span>Skills</span></Link>
-            <Link href="#work" onClick={handleScroll}><span>Projects</span></Link>
-            <Link href="#contact" onClick={handleScroll}><span>Contact</span></Link>
+            <Link href="#home" onClick={handleScroll}>
+              <span>{t("Home")}</span>
+            </Link>
+            <Link href="#about" onClick={handleScroll}>
+              <span>{t("About")}</span>
+            </Link>
+            <Link href="#skills" onClick={handleScroll}>
+              <span>{t("Skills")}</span>
+            </Link>
+            <Link href="#work" onClick={handleScroll}>
+              <span>{t("Projects")}</span>
+            </Link>
+            <Link href="#contact" onClick={handleScroll}>
+              <span>{t("Contact")}</span>
+            </Link>
           </Typographie>
           <Typographie variant="body-sm" theme="light">
             Copyright © {year} CBK

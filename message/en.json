@@ -44,5 +44,23 @@
     "text6": "Using Python to program Raspberry Pi boards for personal projects.",
     "title7": "Emerging Web Technologies",
     "text7": "Learning Next.js to create modern and high-performance web applications. Exploring TypeScript to enhance the quality and maintainability of web projects."
+  },
+  "Work": {
+    "intro": "Discover my diverse projects, reflecting passion and dedication in development and design.",
+    "name1": "Weather App",
+    "text1": "A weather website enabling users to check temperature, humidity, rainfall, and other weather details for any city or country worldwide.",
+    "name2": "Food App",
+    "text2": "My initial project using React and Tailwind CSS, allowing users to add food items to their cart, review them, and remove selections.",
+    "name3": "Portfolio",
+    "text3": "A portfolio showcasing my skills and projects, created for freelancing on platforms like Fiverr.",
+    "buttonPrimary": "Visite website",
+    "buttonSecondary": "Code on Github Repo",
+    "madeWith": "Built Using"
+  },
+  "Contact": {
+    "title": "Let's get in touch",
+    "text": "Feel free to contact me via phone or through my social media channels. I'm always available to connect!",
+    "phone": "Call Me Now:",
+    "email": "My Email:"
   }
 }

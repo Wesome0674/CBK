@@ -8,21 +8,22 @@ import Image from "next/image";
 import { workData } from "../data/skillsData";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { useTranslations } from "next-intl";
 
-interface Props { }
+interface Props {}
 
-export const Work = ({ }: Props) => {
+export const Work = ({}: Props) => {
+  const t = useTranslations("Work");
 
   const [largeur, setLargeur] = useState(0);
   useEffect(() => {
     const handleResize = () => {
       setLargeur(window.innerWidth);
-      console.log(largeur)
+      console.log(largeur);
     };
     handleResize(); // set initial width
-    window.addEventListener('resize', handleResize);
-
-  },);
+    window.addEventListener("resize", handleResize);
+  });
 
   return (
     <Container className="py-10">
@@ -36,13 +37,14 @@ export const Work = ({ }: Props) => {
           theme="tercery"
           className="max-w-[550px]"
         >
-          &quot;Discover my diverse projects, reflecting passion and dedication
-          in development and design.&quot;
+          &quot;
+          {t("intro")}
+          &quot;
         </Typographie>
       </div>
 
-      {workData.map((item, index) => (
-        largeur <= 768 ?
+      {workData.map((item, index) =>
+        largeur <= 768 ? (
           <>
             <div
               key={index}
@@ -54,7 +56,7 @@ export const Work = ({ }: Props) => {
                   variant="body-sm"
                   className=" font-light"
                 >
-                  {item.subtitle}
+                  {t(item.subtitle)}
                 </Typographie>
                 <Typographie variant="h1">{item.title}</Typographie>
                 <Typographie
@@ -62,10 +64,10 @@ export const Work = ({ }: Props) => {
                   theme="tercery"
                   className="max-w-[500px]"
                 >
-                  {item.text}
+                  {t(item.text)}
                 </Typographie>
                 <div className="flex items-center gap-3">
-                  <Typographie>Built Using:</Typographie>
+                  <Typographie>{t("madeWith")}</Typographie>
                   {typeof item.madeUsing.first === "string" ? (
                     <Typographie theme="primary">
                       {item.madeUsing.first}
@@ -83,8 +85,16 @@ export const Work = ({ }: Props) => {
                   )}
                 </div>
                 <div className="flex items-center gap-4">
-                  <Link href={item.hrefSite}><Button size="small" icon={{ icon: HiArrowSmallRight }}>Visite website</Button></Link>
-                  <Link href={item.hrefCode}><Button size="small" variant="outline">Code on Github Repo</Button></Link>
+                  <Link href={item.hrefSite}>
+                    <Button size="small" icon={{ icon: HiArrowSmallRight }}>
+                      {t("buttonPrimary")}
+                    </Button>
+                  </Link>
+                  <Link href={item.hrefCode}>
+                    <Button  variant="outline">
+                      {t("buttonSecondary")}
+                    </Button>
+                  </Link>
                 </div>
               </div>
               <div className="md:w-[35em] w-[25em] aspect-video relative rounded-md  bg-white shadow-md bg-clip-border">
@@ -100,7 +110,7 @@ export const Work = ({ }: Props) => {
               </div>
             </div>
           </>
-          :
+        ) : (
           <div
             key={index}
             className="flex flex-col md:flex-row items-center justify-between gap-20 md:gap-4 my-20"
@@ -126,7 +136,7 @@ export const Work = ({ }: Props) => {
                 variant="body-sm"
                 className=" font-light"
               >
-                {item.subtitle}
+                {t(item.subtitle)}
               </Typographie>
               <Typographie variant="h1">{item.title}</Typographie>
               <Typographie
@@ -134,10 +144,10 @@ export const Work = ({ }: Props) => {
                 theme="tercery"
                 className="max-w-[500px]"
               >
-                {item.text}
+                {t(item.text)}
               </Typographie>
               <div className="flex items-center gap-3">
-                <Typographie>Built Using:</Typographie>
+                <Typographie>{t("madeWith")}</Typographie>
                 {typeof item.madeUsing.first === "string" ? (
                   <Typographie theme="primary">
                     {item.madeUsing.first}
@@ -155,8 +165,16 @@ export const Work = ({ }: Props) => {
                 )}
               </div>
               <div className="flex items-center gap-4">
-                <Link href={item.hrefSite}><Button icon={{ icon: HiArrowSmallRight }}>Visite website</Button></Link>
-                <Link href={item.hrefCode}><Button variant="outline">Code on Github Repo</Button></Link>
+                <Link href={item.hrefSite}>
+                  <Button  icon={{ icon: HiArrowSmallRight }}>
+                    {t("buttonPrimary")}
+                  </Button>
+                </Link>
+                <Link href={item.hrefCode}>
+                  <Button  variant="outline">
+                    {t("buttonSecondary")}
+                  </Button>
+                </Link>
               </div>
             </div>
             {item.id % 2 === 1 ? (
@@ -174,7 +192,8 @@ export const Work = ({ }: Props) => {
               ""
             )}
           </div>
-      ))}
+        )
+      )}
     </Container>
   );
 };
