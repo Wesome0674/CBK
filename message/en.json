@@ -1,5 +1,32 @@
 {
-    "Index": {
-      "title": "Hello world!"
-    }
+  "Header": {
+    "title": "Hello, i'm",
+    "text": "I'm a passionate student coder based in Annecy France. I strives to build immersive and beautiful web applications through carefully crafted code and user-centric design.",
+    "buttonPrimary": "See my Work",
+    "buttonSecondary": "Contact me"
+  },
+  "Navigation": {
+    "Home": "Home",
+    "About": "About",
+    "Skills": "Skills",
+    "Projects": "Projects",
+    "Contact": "Contact"
+  },
+  "About": {
+    "title": "I am passionate front-end web developper",
+    "subtitle": "Hi I'm Kilian Boularand",
+    "text": "A 17-year-old high school senior with a passion for creating captivating website designs and bringing them to life through coding. For nearly two years now, I've been immersing myself in the world of web development, constantly honing my skills and pushing boundaries. What started as a curiosity has evolved into a full-blown passion, driving me to explore new design trends, experiment with coding languages, and seek out innovative ways to merge aesthetics with functionality."
+  },
+  "Skills": {
+    "title": "My Skills",
+    "text": "Explore my journey in web development through this interactive timeline. Discover my skills, projects, and achievements, and delve into the evolution of my coding abilities. From my initial steps in HTML and CSS to my advanced explorations in JavaScript and beyond, follow my path towards technical mastery and creativity in web design.",
+    "boxTitle1": "1. Front-end",
+    "boxtext1": "Discovering front-end was my entry into coding, exploring the creation of interactive and dynamic layouts.",
+    "boxTitle2": "2. Back-end",
+    "boxtext2": "To improve website functionality, exploring back-end with PHP and Firebase was crucial..",
+    "boxTitle3": "3. Design",
+    "boxtext3": "To craft compelling websites, mastering design through tools like Figma became essential in my journey",
+    "boxTitle4": "4. IOT",
+    "boxtext4": "Expanding into IoT, mastering Python and Raspberry Pi projects became essential.."
   }
+}

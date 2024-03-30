@@ -10,21 +10,18 @@ import { MdOutlineDesignServices } from "react-icons/md"; // design header
 import { TbWorldWww } from "react-icons/tb"; // www
 import Image from "next/image";
 import Link from "next/link";
-import Aos from 'aos'
-import 'aos/dist/aos.css';
-
-
-
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useTranslations } from "next-intl";
 
 interface Props {}
 
 export const Header = ({}: Props) => {
-
   useEffect(() => {
     Aos.init();
-  }, [])
+  }, []);
 
-
+  const t = useTranslations("Header");
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     // first prevent the default behavior
     e.preventDefault();
@@ -46,7 +43,7 @@ export const Header = ({}: Props) => {
             component="h1"
             className="flex flex-col"
           >
-            <span>Hello, i&apos;m</span>
+            <span>{t("title")}</span>
             <span>Boularand Killian</span>
           </Typographie>
           <Typographie
@@ -55,9 +52,7 @@ export const Header = ({}: Props) => {
             className="max-w-[500px]"
             component="p"
           >
-            I&apos;m a passionate student coder based in Annecy France. I
-            strives to build immersive and beautiful web applications through
-            carefully crafted code and user-centric design.
+            {t("text")}
           </Typographie>
         </div>
 
@@ -77,15 +72,17 @@ export const Header = ({}: Props) => {
         </Typographie>
         <div className="space-x-7">
           <Link onClick={handleScroll} href="#work">
-            <Button icon={{ icon: HiArrowSmallRight }}>See my Work</Button>
+            <Button icon={{ icon: HiArrowSmallRight }}>
+              {t("buttonPrimary")}
+            </Button>
           </Link>
           <Link onClick={handleScroll} href="#contact">
-            <Button variant="outline">Contact me</Button>
+            <Button variant="outline">{t("buttonSecondary")}</Button>
           </Link>
         </div>
       </div>
       <div></div>
-      <div className="relative"  data-aos="fade-left">
+      <div className="relative" data-aos="fade-left">
         <div //👈 wrap your Image tag
           className="drop-shadow-lg bg-black md:h-[400px] w-[200px] h-[325px] md:w-[275px]  border-4 border-light rounded origin-bottom md:-rotate-12 "
         >

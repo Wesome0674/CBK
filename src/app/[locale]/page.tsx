@@ -10,16 +10,17 @@ import Loader from "@/ui/components/loader/Loader";
 import { useTranslations } from "next-intl";
 
 
-
 export default function Home() {
-  const t = useTranslations("Index");
+
+  const t = useTranslations('Header');
+
   return (
     <>
       <Form /> 
       <Loader/>
       <Navigation />
       <div id="home">
-        <Header />
+        <Header/>
       </div>
       <div id="about">
         <About />

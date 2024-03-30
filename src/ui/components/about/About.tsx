@@ -2,10 +2,12 @@ import Image from "next/image";
 import { Cards } from "../cards/Cards";
 import { Container } from "../container/Container";
 import { Typographie } from "@/ui/designsystem/typography/Typographie";
+import { useTranslations } from "next-intl";
 
 interface Props {}
 
 export const About = ({}: Props) => {
+  const t = useTranslations("About")
   return (
     <Container  className=" translate-y-36">
       <Cards className="mx-auto w-fit grid place-content-center" variant="big">
@@ -25,11 +27,11 @@ export const About = ({}: Props) => {
             component="h3"
             className="font-semibold max-w-[500px]"
           >
-            I am passionate front-end web developper
+           {t("title")}
           </Typographie>
           <div className="flex items-center gap-2">
             <Typographie component="p">
-              Hi I&apos;m Kilian Boularand
+              {t("subtitle")}
             </Typographie>
             <div //👈 wrap your Image tag
               className="relative h-[30px] w-[30px] "
@@ -49,14 +51,7 @@ export const About = ({}: Props) => {
             component="p"
             className="max-w-[650px]"
           >
-            A 17-year-old high school senior with a passion for creating
-            captivating website designs and bringing them to life through
-            coding. For nearly two years now, I&apos;ve been immersing myself in the
-            world of web development, constantly honing my skills and pushing
-            boundaries. What started as a curiosity has evolved into a
-            full-blown passion, driving me to explore new design trends,
-            experiment with coding languages, and seek out innovative ways to
-            merge aesthetics with functionality.
+           {t("text")}
           </Typographie>
         </div>
       </Cards>

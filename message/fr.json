@@ -1,5 +1,32 @@
 {
-    "Index": {
-      "title": "Bonjour le monde!"
-    }
+  "Header": {
+    "title": "Salut, je suis",
+    "text": "Je suis un étudiant codeur passionné basé à Annecy France. Je m'efforce de créer des applications Web immersives et esthétiques grâce à un code soigneusement conçu et une conception centrée sur l'utilisateur.",
+    "buttonPrimary": "Voir mon travail",
+    "buttonSecondary": "Me contacter"
+  },
+  "Navigation": {
+    "Home": "Accueil",
+    "About": "Biographie",
+    "Skills": "Compétences",
+    "Projects": "Projets",
+    "Contact": "Contact"
+  },
+  "About": {
+    "title": "Je suis un passioner developper web front-end",
+    "subtitle": "Salut je suis Kilian Boularand",
+    "text": "Un lycéen de 17 ans passionné par la création de designs de sites Web captivants et leur donnant vie grâce au codage. Depuis près de deux ans maintenant, je m'immerge dans le monde du développement web, perfectionnant constamment mes compétences et repoussant mes limites. Ce qui a commencé comme une curiosité s'est transformé en une véritable passion, me poussant à explorer de nouvelles tendances en matière de design, à expérimenter des langages de codage et à rechercher des moyens innovants de fusionner l'esthétique et la fonctionnalité."
+  },
+  "Skills": {
+    "title": "Mes compétences",
+    "text": "Explorez mon parcours dans le développement Web à travers cette chronologie interactive. Découvrez mes compétences, mes projets et mes réalisations, et plongez dans l'évolution de mes capacités de codage. De mes premiers pas en HTML et CSS jusqu'à mes explorations avancées en JavaScript et au-delà, suivez mon chemin vers la maîtrise technique et la créativité en conception Web.",
+    "boxTitle1": "1. Front-end",
+    "boxtext1": "La découverte du front-end a été mon entrée dans le codage, en explorant la création de mises en page interactives et dynamiques.",
+    "boxTitle2": "2. Back-end",
+    "boxtext2": "Pour améliorer les fonctionnalités du site Web, l'exploration du back-end avec PHP et Firebase était cruciale.",
+    "boxTitle3": "3. Design",
+    "boxtext3": "Pour créer des sites Web convaincants, maîtriser le design grâce à des outils comme Figma est devenu essentiel dans mon parcours.",
+    "boxTitle4": "4. IOT",
+    "boxtext4": "En se développant dans l'IoT, la maîtrise des projets Python et Raspberry Pi est devenue essentielle."
+  }
   }
