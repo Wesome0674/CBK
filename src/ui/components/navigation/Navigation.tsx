@@ -6,13 +6,13 @@ import { LuMenu } from "react-icons/lu";
 import Link from "next/link";
 import { useState } from "react";
 import { IoMdClose } from "react-icons/io";
-import { Button } from "@/ui/designsystem/Button";
-import { IoChevronDown } from "react-icons/io5";
+import Switcher from "../switcher/Switcher";
 
 
 interface Props { }
 
 export const Navigation = ({ }: Props) => {
+
 
   const [show, setShow] = useState(false)
 
@@ -110,15 +110,7 @@ export const Navigation = ({ }: Props) => {
             </Typographie>
           </div>
         </div>
-        <Button size="medium" icon={{ icon: IoChevronDown }}>
-          <select
-            name="language"
-            className="w-full bg-transparent appearance-none border-none focus:outline-none cursor-pointer"
-          >
-            <option className=" text-secondary ">Us English</option>
-            <option className=" text-secondary ">Fr French</option>
-          </select>
-        </Button>
+        <Switcher />
       </Container>
     </>
   );
