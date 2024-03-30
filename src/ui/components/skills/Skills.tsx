@@ -26,6 +26,7 @@ export const Skills = ({}: Props) => {
     { id: 3, key: "boxTitle3", textKey: "boxtext3", icon: MdOutlineDesignServices },
     { id: 4, key: "boxTitle4", textKey: "boxtext4", icon:  SiArduino },
   ];
+  
   return (
     <div className="bg-[#F0F1F3] pb-20 pt-56 space-y-36 ">
       <Container className="flex flex-col md:flex-row items-center justify-between gap-7">

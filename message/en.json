@@ -28,5 +28,21 @@
     "boxtext3": "To craft compelling websites, mastering design through tools like Figma became essential in my journey",
     "boxTitle4": "4. IOT",
     "boxtext4": "Expanding into IoT, mastering Python and Raspberry Pi projects became essential.."
+  },
+  "Timeline": {
+    "title1": "Code Discovery",
+    "text1": "Initial steps into web development during high school science classes. Basics of Python explored during math courses.",
+    "title2": "Introduction to JavaScript",
+    "text2": "Discovery of JavaScript and its capabilities as a programming language.",
+    "title3": "Mastery of React",
+    "text3": "Learning the React framework to develop dynamic and interactive web applications.",
+    "title4": "Exploration of Tailwind CSS",
+    "text4": "Discovery and use of Tailwind CSS to simplify and expedite the design process.",
+    "title5": "Knowledge Expansion",
+    "text5": "Learning the C language to grasp fundamental programming concepts and exploring PHP for server-side web development.",
+    "title6": "Raspberry Pi Programming",
+    "text6": "Using Python to program Raspberry Pi boards for personal projects.",
+    "title7": "Emerging Web Technologies",
+    "text7": "Learning Next.js to create modern and high-performance web applications. Exploring TypeScript to enhance the quality and maintainability of web projects."
   }
 }

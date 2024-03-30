@@ -28,5 +28,21 @@
     "boxtext3": "Pour créer des sites Web convaincants, maîtriser le design grâce à des outils comme Figma est devenu essentiel dans mon parcours.",
     "boxTitle4": "4. IOT",
     "boxtext4": "En se développant dans l'IoT, la maîtrise des projets Python et Raspberry Pi est devenue essentielle."
+  },
+  "Timeline": {
+    "title1": "Decouverte du code",
+    "text1": "Premiers pas dans le développement Web pendant les cours de sciences au lycée. Bases de Python explorées lors de cours de mathématiques.",
+    "title2": "Introduction a JavaScript",
+    "text2": "Découverte de JavaScript et de ses capacités en tant que langage de programmation.",
+    "title3": "Maîtrise de React",
+    "text3": "Apprentissage du framework React pour développer des applications web dynamiques et interactives.",
+    "title4": "Exploration de Tailwind CSS",
+    "text4": "Découverte et utilisation de Tailwind CSS pour simplifier et accélérer le processus de conception.",
+    "title5": "Expansion des connaissances",
+    "text5": "Apprendre le langage C pour comprendre les concepts fondamentaux de la programmation et explorer PHP pour le développement Web côté serveur.",
+    "title6": "Programmation Raspberry Pi",
+    "text6": "Utiliser Python pour programmer des cartes Raspberry Pi pour des projets personnels.",
+    "title7": "Technologies Web émergentes",
+    "text7": "Apprendre Next.js pour créer des applications Web modernes et performantes. Explorer TypeScript pour améliorer la qualité et la maintenabilité des projets Web."
   }
   }

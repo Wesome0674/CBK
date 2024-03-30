@@ -123,7 +123,7 @@ export const socialMedia = [
   },
 ];
 
-export const timelineData = [
+/* export const timelineData = [
   {
     id: 1,
     title: "Code Discovery",
@@ -213,3 +213,4 @@ export const timelineData = [
     text: "Learning Next.js to create modern and high-performance web applications. Exploring TypeScript to enhance the quality and maintainability of web projects.",
   },
 ];
+ */
