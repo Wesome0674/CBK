@@ -19,7 +19,7 @@ export const Timeline = () => {
     <>
       <div>
         <Typographie variant="h3" className="text-center my-20">
-          Beginning of my coding journey
+          {t("intro")}
         </Typographie>
         <div className="max-w-7xl mx-auto w-full grid grid-cols-9 px-2">
           {translation.map((item, index) => (

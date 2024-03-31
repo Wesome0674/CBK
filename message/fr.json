@@ -30,6 +30,7 @@
     "boxtext4": "En se développant dans l'IoT, la maîtrise des projets Python et Raspberry Pi est devenue essentielle."
   },
   "Timeline": {
+    "intro": "Début de mon parcours de codage",
     "title1": "Decouverte du code",
     "text1": "Premiers pas dans le développement Web pendant les cours de sciences au lycée. Bases de Python explorées lors de cours de mathématiques.",
     "title2": "Introduction a JavaScript",
@@ -62,5 +63,13 @@
     "text": "N'hésitez pas à me contacter par téléphone ou via mes réseaux sociaux. Je suis toujours disponible pour me connecter !",
     "phone": "Appellez-moi maintenant:",
     "email": "Mon Email:"
+  },
+  "Message": {
+    "title": "Envoie moi un message",
+    "subtitle": "tu peux me joindre à tout moment",
+    "name": "Nom",
+    "placeholderName": "Entrer votre nom",
+    "message": "votre message viens ici",
+    "button": "Envoyer Message"
   }
 }

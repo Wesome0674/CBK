@@ -7,8 +7,12 @@ import { BsChatTextFill } from "react-icons/bs";
 import { Button } from "@/ui/designsystem/Button";
 import { IoMdClose } from "react-icons/io";
 import { Cards } from "../cards/Cards";
+import { useTranslations } from "next-intl";
 
 const QuickMessage = () => {
+
+  const t = useTranslations("Message");
+
   const [show, setShow] = useState(false);
   const [validation, setValidation] = useState("");
 
@@ -73,28 +77,28 @@ const QuickMessage = () => {
                   variant="h3"
                   className="font-semi-bold flex items-center justify-between"
                 >
-                  Message Me
+                  {t("title")}
                   <IoMdClose
                     className="cursor-pointer"
                     onClick={() => setShow(!show)}
                   />
                 </Typographie>
                 <Typographie variant="body-sm" theme="tercery">
-                  you can reach me anytime
+                  {t("subtitle")}
                 </Typographie>
               </div>
               <form ref={form} onSubmit={sendEmail}>
                 <div className="flex flex-col space-y-3 my-6 ">
                   <div className="flex flex-col space-y-1">
                     <Typographie variant="body-sm" theme="tercery">
-                      Name
+                      {t("name")}
                     </Typographie>
                     <input
                       ref={addInputs}
                       name="user_name"
                       className=" bg-tercery/10 text-sm font-normal p-3 rounded-[4px]"
                       type="text"
-                      placeholder="Enter you're name"
+                      placeholder={t("placeholderName")}
                     />
                   </div>
                   <div className="flex flex-col space-y-1">
@@ -118,14 +122,14 @@ const QuickMessage = () => {
                       name="message"
                       rows={5}
                       className=" bg-tercery/10 text-sm font-normal p-3 rounded-[4px]"
-                      placeholder="You’re message goes here"
+                      placeholder={t("message")}
                     />
                   </div>
                   <p className="text-red">{validation}</p>
                 </div>
                
                 <Button className="w-full">
-                    <input className="w-full" type="submit" value="Send Message" />
+                    <input className="w-full" type="submit" value={t("button")} />
                 </Button>
               </form>
             </Cards>

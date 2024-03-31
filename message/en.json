@@ -30,6 +30,7 @@
     "boxtext4": "Expanding into IoT, mastering Python and Raspberry Pi projects became essential.."
   },
   "Timeline": {
+    "intro": "Beginning of my coding journey",
     "title1": "Code Discovery",
     "text1": "Initial steps into web development during high school science classes. Basics of Python explored during math courses.",
     "title2": "Introduction to JavaScript",
@@ -62,5 +63,13 @@
     "text": "Feel free to contact me via phone or through my social media channels. I'm always available to connect!",
     "phone": "Call Me Now:",
     "email": "My Email:"
+  },
+  "Message": {
+    "title": "Message Me",
+    "subtitle": "you can reach me anytime",
+    "name": "Name",
+    "placeholderName": "Enter you're name",
+    "message": "You're message goes here",
+    "button": "Send Message"
   }
 }
