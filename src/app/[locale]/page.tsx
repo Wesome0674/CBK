@@ -17,7 +17,6 @@ export default function Home() {
   return (
     <>
       <Form /> 
-      <Loader/>
       <Navigation />
       <div id="home">
         <Header/>
