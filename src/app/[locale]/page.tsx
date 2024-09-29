@@ -6,7 +6,6 @@ import { Work } from "@/ui/components/work/Work";
 import { Contact } from "@/ui/components/contact/Contact";
 import { Footer } from "@/ui/components/footer/Footer";
 import Form from "@/ui/components/quickMessage/Form"
-import Loader from "@/ui/components/loader/Loader";
 import { useTranslations } from "next-intl";
 
 

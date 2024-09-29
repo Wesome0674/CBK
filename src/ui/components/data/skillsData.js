@@ -1,5 +1,7 @@
 import { FaReact } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
+import { FaCss3Alt } from "react-icons/fa6";
+import { FaHtml5 } from "react-icons/fa";
 import { Button } from "@/ui/designsystem/Button";
 import Image from "next/image";
 import Link from "next/link";
@@ -44,6 +46,19 @@ export const workData = [
     img: "/assets/images/portofoliomockup.png",
     hrefSite: "https://wesome0674.github.io/myPortfolio/",
     hrefCode: "https://github.com/Wesome0674/myPortfolio",
+  },
+  {
+    id: 4,
+    title: "Foodieland",
+    subtitle: "name4",
+    text: "text4",
+    madeUsing: {
+      first: FaHtml5,
+      second: FaCss3Alt,
+    },
+    img: "/assets/images/foodieland.png",
+    hrefSite: "https://cooking-website-rho.vercel.app/",
+    hrefCode: "https://github.com/Wesome0674/CookingWebsite/",
   },
 ];
 

@@ -54,6 +54,8 @@
     "text2": "My initial project using React and Tailwind CSS, allowing users to add food items to their cart, review them, and remove selections.",
     "name3": "Portfolio",
     "text3": "A portfolio showcasing my skills and projects, created for freelancing on platforms like Fiverr.",
+    "name4": "Cooking Website",
+    "text4": "A website made in class that helps people to make their own recipes easily.",
     "buttonPrimary": "Visite website",
     "buttonSecondary": "Code on Github Repo",
     "madeWith": "Built Using"
