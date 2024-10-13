@@ -6,7 +6,6 @@ import { Button } from "@/ui/designsystem/Button";
 import Image from "next/image";
 import Link from "next/link";
 
-
 export const workData = [
   {
     id: 1,
@@ -59,6 +58,19 @@ export const workData = [
     img: "/assets/images/foodieland.png",
     hrefSite: "https://cooking-website-rho.vercel.app/",
     hrefCode: "https://github.com/Wesome0674/CookingWebsite/",
+  },
+  {
+    id: 5,
+    title: "EnergieX",
+    subtitle: "name5",
+    text: "text5",
+    madeUsing: {
+      first: FaHtml5,
+      second: FaCss3Alt,
+    },
+    img: "/assets/images/energiex.png",
+    hrefSite: "https://energie-x.vercel.app/",
+    hrefCode: "https://github.com/Wesome0674/EnergieX/",
   },
 ];
 
@@ -137,6 +149,3 @@ export const socialMedia = [
     bgColor: "white",
   },
 ];
-
-
- 
